@@ -1,0 +1,6 @@
+target 'Locations' do
+    platform :ios, '12.0'
+    pod 'GoogleMaps', '= 3.3.0'
+    pod 'Alamofire', '~> 5.0.0-rc.1'
+end
+
