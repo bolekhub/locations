@@ -1,0 +1,1161 @@
+{
+    "rows": [
+        {
+            "id": "d2e38",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/harbourbridge.jpg",
+            "region": "SYD_MET",
+            "title": "Sydney Harbour Bridge",
+            "view": "Sydney Harbour Bridge deck looking south towards the Sydney CBD.",
+            "longitude": 151.21152,
+            "latitude": -33.85106
+        },
+        {
+            "id": "d2e386",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/5ways.jpg",
+            "region": "SYD_SOUTH",
+            "title": "5 Ways (Miranda)",
+            "view": "5 ways at The Boulevarde looking west towards Sutherland.",
+            "longitude": 151.10533,
+            "latitude": -34.02977
+        },
+        {
+            "id": "d2e5699",
+            "direction": "N-W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/alisonrd_randwick.jpg",
+            "region": "SYD_MET",
+            "title": "Alison Road (Randwick)",
+            "view": "Alison Road at Darley Road looking north-west towards Anzac Parade.",
+            "longitude": 151.23122,
+            "latitude": -33.90641
+        },
+        {
+            "id": "d2e649",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/anzacbr.jpg",
+            "region": "SYD_MET",
+            "title": "Anzac Bridge",
+            "view": "Intersection of Victoria Road and Anzac Bridge looking east towards the Sydney CBD.",
+            "longitude": 151.18022,
+            "latitude": -33.86789
+        },
+        {
+            "id": "d2e4913",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/anzacpde.jpg",
+            "region": "SYD_MET",
+            "title": "Anzac Parade (Moore Park)",
+            "view": "Corner of Anzac Parade and Cleveland Street looking south towards Randwick.",
+            "longitude": 151.22151,
+            "latitude": -33.89534
+        },
+        {
+            "id": "d2e5786",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/churchst_parra.jpg",
+            "region": "SYD_WEST",
+            "title": "Church Street (Parramatta)",
+            "view": "Corner of Church Street and Victoria Road looking north towards Northmead.",
+            "longitude": 151.00533,
+            "latitude": -33.80866
+        },
+        {
+            "id": "d2e3350",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/citywestlink.jpg",
+            "region": "SYD_MET",
+            "title": "City West Link",
+            "view": "City West Link at Lilyfield looking east towards Victoria Road intersection.",
+            "longitude": 151.17183,
+            "latitude": -33.87175
+        },
+        {
+            "id": "d2e822",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/cumberlandhwy_carlingford.jpg",
+            "region": "SYD_NORTH",
+            "title": "Cumberland Highway (Carlingford)",
+            "view": "Cumberland Highway at Marsden Road looking north towards Beecroft.",
+            "longitude": 151.05237,
+            "latitude": -33.77967
+        },
+        {
+            "id": "d2e735",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/cumberlandhwy_merrylands.jpg",
+            "region": "SYD_WEST",
+            "title": "Cumberland Highway (Merrylands)",
+            "view": "Cumberland Highway at Merrylands Road looking north towards the M4 Western Motorway.",
+            "longitude": 150.96039,
+            "latitude": -33.83031
+        },
+        {
+            "id": "d2e5175",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/easterndist.jpg",
+            "region": "SYD_MET",
+            "title": "Eastern Distributor",
+            "view": "Southern end of the Eastern Distributor tunnel near the Link Road on-ramp looking north towards Sydney.",
+            "longitude": 151.21303,
+            "latitude": -33.90964
+        },
+        {
+            "id": "d2e2912",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f3_kariong.jpg",
+            "region": "REG_NORTH",
+            "title": "M1 Pacific Motorway (Kariong)",
+            "view": "M1 Pacific Motorway at the Kariong on ramp looking south towards Sydney.",
+            "longitude": 151.29416,
+            "latitude": -33.4184
+        },
+        {
+            "id": "d2e909",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f3_mooney.jpg",
+            "region": "REG_NORTH",
+            "title": "M1 Pacific Motorway (Hawkesbury River)",
+            "view": "M1 Pacific Motorway crossing the Hawkesbury River Bridge looking south towards Sydney.",
+            "longitude": 151.20082,
+            "latitude": -33.53074
+        },
+        {
+            "id": "d2e5351",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f3_mountwhite.jpg",
+            "region": "REG_NORTH",
+            "title": "M1 Pacific Motorway (Mount White)",
+            "view": "M1 Pacific Motorway at the Mount White heavy vehicle checking station looking north towards Calga.",
+            "longitude": 151.20595,
+            "latitude": -33.45451
+        },
+        {
+            "id": "d2e3437",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f3_ourimbah.jpg",
+            "region": "REG_NORTH",
+            "title": "M1 Pacific Motorway (Ourimbah)",
+            "view": "M1 Pacific Motorway at Ourimbah on ramp looking north towards Wyong.",
+            "longitude": 151.36906,
+            "latitude": -33.34475
+        },
+        {
+            "id": "d2e996",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f3_wahroonga.jpg",
+            "region": "REG_NORTH",
+            "title": "M1 Pacific Motorway (Wahroonga)",
+            "view": "The Pacific Highway on ramp to the M1 Pacific Motorway looking north towards the Central Coast.",
+            "longitude": 151.10991,
+            "latitude": -33.71873
+        },
+        {
+            "id": "d2e4045",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f3_windybanks.jpg",
+            "region": "REG_NORTH",
+            "title": "M1 Pacific Motorway (Windy Banks)",
+            "view": "M1 Pacific Motorway at the Windy Banks on ramp looking south towards Hornsby.",
+            "longitude": 151.14775,
+            "latitude": -33.63605
+        },
+        {
+            "id": "d2e561",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/falconst_crowsnest.jpg",
+            "region": "SYD_NORTH",
+            "title": "Falcon Street (Crows Nest)",
+            "view": "Corner of Falcon Street and the Pacific Highway looking East towards the Warringah Freeway.",
+            "longitude": 151.20084,
+            "latitude": -33.82768
+        },
+        {
+            "id": "d2e297",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/ghd_airport.jpg",
+            "region": "SYD_MET",
+            "title": "General Holmes Drive (Botany)",
+            "view": "General Holmes Drive at the east end of the Airport Tunnel looking east towards Botany.",
+            "longitude": 151.18805,
+            "latitude": -33.94447
+        },
+        {
+            "id": "d2e2648",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/williamst.jpg",
+            "region": "SYD_MET",
+            "title": "William Street (East Sydney)",
+            "view": "Corner of William Street and College Street near Hyde Park looking east towards Kings Cross.",
+            "longitude": 151.2126,
+            "latitude": -33.87375
+        },
+        {
+            "id": "d2e3264",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/gladesvillebr.jpg",
+            "region": "SYD_MET",
+            "title": "Gladesville Bridge (Drummoyne)",
+            "view": "Gladesville Bridge looking west towards Gladesville.",
+            "longitude": 151.15195,
+            "latitude": -33.84727
+        },
+        {
+            "id": "d2e2561",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/humehwy_ashfield.jpg",
+            "region": "SYD_MET",
+            "title": "Hume Highway (Ashfield)",
+            "view": "Corner of Hume Highway and Frederick Street looking west towards Strathfield.",
+            "longitude": 151.11737,
+            "latitude": -33.88851
+        },
+        {
+            "id": "d2e1865",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/humehwy_bankstown.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Hume Highway (Bankstown)",
+            "view": "Corner of Hume Highway and Stacey Street looking east towards Strathfield.",
+            "longitude": 151.04048,
+            "latitude": -33.90583
+        },
+        {
+            "id": "d2e1517",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/humehwy_campbelltown.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Hume Motorway (Campbelltown)",
+            "view": "Corner of Hume Motorway and Narellan Road looking north towards Liverpool.",
+            "longitude": 150.78532,
+            "latitude": -34.06199
+        },
+        {
+            "id": "d2e1691",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/humehwy_liverpool.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Hume Highway (Cumberland Highway, Liverpool)",
+            "view": "Corner of Hume Highway and Cumberland Highway looking south towards Casula.",
+            "longitude": 150.92073,
+            "latitude": -33.91519
+        },
+        {
+            "id": "d2e1604",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/humehwy_standrews.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Hume Motorway (St Andrews)",
+            "view": "Corner of Hume Motorway and Raby Road looking north towards Liverpool.",
+            "longitude": 150.82399,
+            "latitude": -34.02971
+        },
+        {
+            "id": "d2e1952",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/humehwy_strathfield.jpg",
+            "region": "SYD_MET",
+            "title": "Hume Highway (Strathfield)",
+            "view": "Corner of Hume Highway and Roberts Road looking west towards Yagoona.",
+            "longitude": 151.0681,
+            "latitude": -33.886
+        },
+        {
+            "id": "d2e1778",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/humehwy_villawood.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Hume Highway (Villawood)",
+            "view": "Corner of Hume Highway and Woodville Road looking east towards Bass Hill.",
+            "longitude": 150.97311,
+            "latitude": -33.88951
+        },
+        {
+            "id": "d2e3698",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/jrd_rosehill.jpg",
+            "region": "SYD_WEST",
+            "title": "James Ruse Drive (Rosehill)",
+            "view": "James Ruse Drive at Grand Avenue looking north towards Rydalmere.",
+            "longitude": 151.02188,
+            "latitude": -33.81927
+        },
+        {
+            "id": "d2e2736",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/knggrd_beverlyhills.jpg",
+            "region": "SYD_MET",
+            "title": "King Georges Road (Beverly Hills)",
+            "view": "Corner of King Georges Road and Stoney Creek Road looking north towards Beverly Hills.",
+            "longitude": 151.08347,
+            "latitude": -33.95253
+        },
+        {
+            "id": "d2e5612",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m2_pennanthills.jpg",
+            "region": "SYD_NORTH",
+            "title": "M2 (Pennant Hills)",
+            "view": "M2 at Pennant Hills Road looking west towards Baulkham Hills.",
+            "longitude": 151.04926,
+            "latitude": -33.75906
+        },
+        {
+            "id": "d2e11",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m2_ryde.jpg",
+            "region": "SYD_NORTH",
+            "title": "M2 (Ryde)",
+            "view": "M2 at the Lane Cove Road exit looking west towards Epping.",
+            "longitude": 151.13159,
+            "latitude": -33.78199
+        },
+        {
+            "id": "d2e5262",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m4_minchinbury.jpg",
+            "region": "SYD_WEST",
+            "title": "M4 Western Motorway (Minchinbury)",
+            "view": "M4 Western Motorway at Wallgrove Road looking east towards Eastern Creek.",
+            "longitude": 150.84489,
+            "latitude": -33.79519
+        },
+        {
+            "id": "d2e4740",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m4_olympic.jpg",
+            "region": "SYD_MET",
+            "title": "M4 Western Motorway (Olympic Park)",
+            "view": "M4 Western Motorway at Sydney Olympic Park looking east towards Strathfield.",
+            "longitude": 151.06433,
+            "latitude": -33.85557
+        },
+        {
+            "id": "d2e124",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m4_prospect.jpg",
+            "region": "SYD_WEST",
+            "title": "M4 Western Motorway (Prospect)",
+            "view": "M4 Western Motorway at the Prospect Highway exit ramp looking east towards Parramatta.",
+            "longitude": 150.91589,
+            "latitude": -33.80546
+        },
+        {
+            "id": "d2e4654",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m4_stmarys.jpg",
+            "region": "SYD_WEST",
+            "title": "M4 Western Motorway (St Marys)",
+            "view": "M4 Western Motorway at Mamre Road looking west towards Penrith.",
+            "longitude": 150.77086,
+            "latitude": -33.78512
+        },
+        {
+            "id": "d2e3175",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m5_m7.jpg",
+            "region": "SYD_SOUTH",
+            "title": "M5 / M7",
+            "view": "Junction of M5 and M7 looking south towards Ingleburn.",
+            "longitude": 150.87645,
+            "latitude": -33.95648
+        },
+        {
+            "id": "d2e1256",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m5_liverpool.jpg",
+            "region": "SYD_SOUTH",
+            "title": "M5 (Liverpool)",
+            "view": "M5 at Hume Highway looking east towards Sydney.",
+            "longitude": 150.9135,
+            "latitude": -33.93819
+        },
+        {
+            "id": "d2e1342",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m5_milperra.jpg",
+            "region": "SYD_SOUTH",
+            "title": "M5 (Milperra)",
+            "view": "M5 Motorway at Henry Lawson Drive looking east towards Beverley Hills.",
+            "longitude": 150.98242,
+            "latitude": -33.94493
+        },
+        {
+            "id": "d2e1429",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m5east.jpg",
+            "region": "SYD_MET",
+            "title": "M5 East (Beverly Hills)",
+            "view": "M5 East at the King Georges Road on ramp looking west towards Riverwood.",
+            "longitude": 151.0769,
+            "latitude": -33.94291
+        },
+        {
+            "id": "d2e3087",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m7_glenwood.jpg",
+            "region": "SYD_WEST",
+            "title": "M7 (Glenwood)",
+            "view": "M7 Motorway at Sunnyholt Road looking east towards Bella Vista.",
+            "longitude": 150.91777,
+            "latitude": -33.73796
+        },
+        {
+            "id": "d2e2823",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m7_horsleydr.jpg",
+            "region": "SYD_WEST",
+            "title": "M7 at The Horsley Drive (Horsley Park)",
+            "view": "M7 Motorway at The Horsley Drive looking south towards Hoxton Park.",
+            "longitude": 150.85556,
+            "latitude": -33.84171
+        },
+        {
+            "id": "d2e4481",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/manlyrd.jpg",
+            "region": "SYD_NORTH",
+            "title": "Manly Road (Seaforth)",
+            "view": "Corner of Manly Road and Battle Boulevard near The Spit Bridge, looking north towards Manly.",
+            "longitude": 151.24631,
+            "latitude": -33.8017
+        },
+        {
+            "id": "d2e3957",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/militaryrd_neutralbay.jpg",
+            "region": "SYD_NORTH",
+            "title": "Military Road (Neutral Bay)",
+            "view": "Military Road at Wycombe Road looking west towards the Warringah Freeway.",
+            "longitude": 151.22231,
+            "latitude": -33.8315
+        },
+        {
+            "id": "d2e3785",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/oldwindsorrd.jpg",
+            "region": "SYD_WEST",
+            "title": "Old Windsor Road (Beaumont Hills)",
+            "view": "The intersection of Old Windsor Road and Windsor Road looking south towards Parramatta.",
+            "longitude": 150.93016,
+            "latitude": -33.70421
+        },
+        {
+            "id": "d2e4219",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/oldwindsorrd_winstonhills.jpg",
+            "region": "SYD_WEST",
+            "title": "Old Windsor Road (Winston Hills)",
+            "view": "Old Windsor Road at Abbott Road looking north towards Bella Vista.",
+            "longitude": 150.95857,
+            "latitude": -33.76579
+        },
+        {
+            "id": "d2e23",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/pacific_chats.jpg",
+            "region": "SYD_NORTH",
+            "title": "Pacific Highway (Chatswood)",
+            "view": "Corner of the Pacific Highway and Centennial Avenue near Chatswood Park, looking south towards Sydney.",
+            "longitude": 151.17851,
+            "latitude": -33.79836
+        },
+        {
+            "id": "d2e1082",
+            "direction": "S-W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/pacific_pymble.jpg",
+            "region": "SYD_NORTH",
+            "title": "Ryde Road (Pymble)",
+            "view": "Ryde Road at Pacific Highway looking south-west towards Ryde.",
+            "longitude": 151.14731,
+            "latitude": -33.75077
+        },
+        {
+            "id": "d2e5438",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/parrard_leichhardt.jpg",
+            "region": "SYD_MET",
+            "title": "Parramatta Road (Leichhardt)",
+            "view": "Parramatta Road at Elswick Street looking west towards Ashfield.",
+            "longitude": 151.15317,
+            "latitude": -33.88904
+        },
+        {
+            "id": "d2e3610",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/parrard_parra.jpg",
+            "region": "SYD_WEST",
+            "title": "Parramatta Road (Parramatta)",
+            "view": "Parramatta Road at Woodville Road looking east towards Auburn.",
+            "longitude": 151.00475,
+            "latitude": -33.82758
+        },
+        {
+            "id": "d2e2386",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/parrard_silverwater.jpg",
+            "region": "SYD_MET",
+            "title": "Parramatta Road (Silverwater)",
+            "view": "Parramatta Road at Silverwater Road looking west towards Parramatta.",
+            "longitude": 151.04221,
+            "latitude": -33.84504
+        },
+        {
+            "id": "d2e4826",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/parrard_strathfield.jpg",
+            "region": "SYD_MET",
+            "title": "Parramatta Road (Strathfield)",
+            "view": "Parramatta Road at Leicester Avenue looking east towards Burwood.",
+            "longitude": 151.09364,
+            "latitude": -33.86652
+        },
+        {
+            "id": "d2e4132",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/pittwaterrd_narrabeen.jpg",
+            "region": "SYD_NORTH",
+            "title": "Pittwater Road (Narrabeen)",
+            "view": "Pittwater Road at Wakehurst Parkway looking north towards Mona Vale.",
+            "longitude": 151.29582,
+            "latitude": -33.70989
+        },
+        {
+            "id": "d2e2475",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/princes_blakehurst.jpg",
+            "region": "SYD_MET",
+            "title": "Princes Highway (Blakehurst)",
+            "view": "Princes Highway at the King Georges Road intersection looking south towards Sutherland.",
+            "longitude": 151.11166,
+            "latitude": -33.98789
+        },
+        {
+            "id": "d2e5873",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/princes_kogarah.jpg",
+            "region": "SYD_MET",
+            "title": "Princes Highway (Kogarah)",
+            "view": "Princes Highway at President Avenue looking south towards Ramsgate.",
+            "longitude": 151.13719,
+            "latitude": -33.96433
+        },
+        {
+            "id": "d2e3524",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/princes_stpeters.jpg",
+            "region": "SYD_MET",
+            "title": "Princes Highway (St Peters)",
+            "view": "Princes Highway at the Canal Road intersection looking north towards Sydney.",
+            "longitude": 151.17467,
+            "latitude": -33.9156
+        },
+        {
+            "id": "d2e210",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/rydebridge.jpg",
+            "region": "SYD_NORTH",
+            "title": "Ryde Bridge (Ryde)",
+            "view": "Church Street crossing Ryde Bridge looking north towards Ryde.",
+            "longitude": 151.09685,
+            "latitude": -33.82227
+        },
+        {
+            "id": "d2e2039",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/sevenhillsrd_sevenhills.jpg",
+            "region": "SYD_WEST",
+            "title": "Seven Hills Road (Seven Hills)",
+            "view": "Seven Hills Road at Abbot Road looking west towards Seven Hills.",
+            "longitude": 150.9429,
+            "latitude": -33.76812
+        },
+        {
+            "id": "d2e5087",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/scd_eastlakes.jpg",
+            "region": "SYD_MET",
+            "title": "Southern Cross Drive (Eastlakes)",
+            "view": "Southern Cross Drive at Wentworth Avenue looking south towards Mascot.",
+            "longitude": 151.20738,
+            "latitude": -33.93581
+        },
+        {
+            "id": "d2e4567",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/stewartst_eastwood.jpg",
+            "region": "SYD_NORTH",
+            "title": "Stewart Street (Eastwood)",
+            "view": "Corner of Stewart Street and Marsden Road looking west towards Parramatta.",
+            "longitude": 151.06529,
+            "latitude": -33.7965
+        },
+        {
+            "id": "d2e5525",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/sed_bondijunction.jpg",
+            "region": "SYD_MET",
+            "title": "Syd Einfeld Drive (Bondi Junction)",
+            "view": "Syd Einfeld Drive looking west towards Sydney CBD.",
+            "longitude": 151.24969,
+            "latitude": -33.89104
+        },
+        {
+            "id": "d2e1169",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/grandpde_bls.jpg",
+            "region": "SYD_MET",
+            "title": "The Grand Parade (Brighton-Le-Sands)",
+            "view": "The Grand Parade at Bay Street looking north towards Sydney Airport.",
+            "longitude": 151.15636,
+            "latitude": -33.9609
+        },
+        {
+            "id": "d2e2213",
+            "direction": "N-W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/victoriard_gladesville.jpg",
+            "region": "SYD_NORTH",
+            "title": "Victoria Road (Gladesville)",
+            "view": "Victoria Road at Pittwater Road looking north-west towards Ryde.",
+            "longitude": 151.12679,
+            "latitude": -33.83002
+        },
+        {
+            "id": "d2e473",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/warringahfwy.jpg",
+            "region": "SYD_NORTH",
+            "title": "Warringah Freeway (North Sydney)",
+            "view": "The Warringah Freeway, approaching the Sydney Harbour Tunnel looking south towards the city.",
+            "longitude": 151.21196,
+            "latitude": -33.83339
+        },
+        {
+            "id": "d2e4394",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/warringahrd_forestville.jpg",
+            "region": "SYD_NORTH",
+            "title": "Warringah Road (Forestville)",
+            "view": "Warringah Road at Healey Way looking east towards Frenchs Forest.",
+            "longitude": 151.20522,
+            "latitude": -33.77139
+        },
+        {
+            "id": "d2e4306",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/warringahrd_frenchsforest.jpg",
+            "region": "SYD_NORTH",
+            "title": "Warringah Road (Frenchs Forest)",
+            "view": "Warringah Road at Forest Way looking west towards Forestville.",
+            "longitude": 151.22659,
+            "latitude": -33.75168
+        },
+        {
+            "id": "d2e3871",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/georgest.jpg",
+            "region": "SYD_MET",
+            "title": "George Street (Railway square)",
+            "view": "Railway Square, George Street looking north towards Sydney CBD.",
+            "longitude": 151.2041,
+            "latitude": -33.88291
+        },
+        {
+            "id": "d2e5000",
+            "direction": "S-W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/kosciuszkord_wilsonsvalley.jpg",
+            "region": "REG_SOUTH",
+            "title": "Kosciuszko Road (Wilson's Valley)",
+            "view": "Wilson's Valley chain bay looking south-west towards Perisher Valley.",
+            "longitude": 148.522067,
+            "latitude": -36.350024
+        },
+        {
+            "id": "d2e6000",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/eppingrd_macquariepark.jpg",
+            "region": "SYD_NORTH",
+            "title": "Epping Road (Macquarie Park)",
+            "view": "Epping Road at Balaclava Road looking west towards Epping.",
+            "longitude": 151.108333,
+            "latitude": -33.777707
+        },
+        {
+            "id": "d2e6001",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/pennanthillsrd_thornleigh.jpg",
+            "region": "SYD_NORTH",
+            "title": "Pennant Hills Road (Thornleigh)",
+            "view": "Pennant Hills Road at The Comenarra Parkway looking south towards Carlingford.",
+            "longitude": 151.081401,
+            "latitude": -33.730807
+        },
+        {
+            "id": "d2e6002",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m4_auburn.jpg",
+            "region": "SYD_WEST",
+            "title": "M4 Western Motorway (Auburn)",
+            "view": "M4 Western Motorway at Auburn looking west towards St Marys.",
+            "longitude": 151.035992,
+            "latitude": -33.838697
+        },
+        {
+            "id": "d2e6003",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/eppingrd_lanecove.jpg",
+            "region": "SYD_NORTH",
+            "title": "Epping Road (Lane Cove)",
+            "view": "Epping Road at Centennial Avenue looking west towards Lane Cove.",
+            "longitude": 151.163759,
+            "latitude": -33.810643
+        },
+        {
+            "id": "d2e6004",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/greatwesternhwy_hazelbrook.jpg",
+            "region": "SYD_WEST",
+            "title": "Great Western Highway (Hazelbrook)",
+            "view": "Great Western Highway at Oaklands Road looking east towards Sydney.",
+            "longitude": 150.451611,
+            "latitude": -33.720882
+        },
+        {
+            "id": "d2e6005",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/audleyrd_audley.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Audley Road (Audley Weir)",
+            "view": "Audley Road at Audley Weir looking east towards Sir Bertram Stevens Drive.",
+            "longitude": 151.056689,
+            "latitude": -34.073084
+        },
+        {
+            "id": "d2e6006",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/beecroftrd_epping.jpg",
+            "region": "SYD_NORTH",
+            "title": "Carlingford Road (Epping)",
+            "view": "Carlingford Road at Beecroft Road looking west towards Carlingford.",
+            "longitude": 151.080881,
+            "latitude": -33.770871
+        },
+        {
+            "id": "d2e6007",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f3_johnrenshawdr.jpg",
+            "region": "REG_NORTH",
+            "title": "M1 Pacific Motorway (John Renshaw Drive)",
+            "view": "M1 Pacific Motorway at John Renshaw Drive looking south towards Sydney.",
+            "longitude": 151.635833,
+            "latitude": -32.8134
+        },
+        {
+            "id": "d2e6008",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f3_sparkesrd.jpg",
+            "region": "REG_NORTH",
+            "title": "M1 Pacific Motorway (Sparks Road)",
+            "view": "M1 Pacific Motorway at Sparks Road looking north towards Newcastle.",
+            "longitude": 151.422404,
+            "latitude": -33.228646
+        },
+        {
+            "id": "d2e6009",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f6_waterfall.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Princes Highway (Heathcote)",
+            "view": "Princes Highway at Heathcote looking south towards Wollongong.",
+            "longitude": 151.010562,
+            "latitude": -34.079598
+        },
+        {
+            "id": "d2e6010",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/f6_mtousley.jpg",
+            "region": "REG_SOUTH",
+            "title": "M1 Princes Motorway (Mt Ousley)",
+            "view": "M1 Princes Motorway at Mt Ousley Road looking north towards Sydney.",
+            "longitude": 150.858024,
+            "latitude": -34.39078
+        },
+        {
+            "id": "d2e6011",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/gorehillfwy_artarmon.jpg",
+            "region": "SYD_NORTH",
+            "title": "Gore Hill Freeway (Artarmon)",
+            "view": "Gore Hill Freeway at Artarmon looking south towards Sydney Harbour Bridge.",
+            "longitude": 151.201508,
+            "latitude": -33.817233
+        },
+        {
+            "id": "d2e6012",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m4_mayshill.jpg",
+            "region": "SYD_WEST",
+            "title": "M4 Western Motorway (Mays Hill)",
+            "view": "M4 Western Motorway at Cumberland Highway looking east towards Sydney.",
+            "longitude": 150.963639,
+            "latitude": -33.81629
+        },
+        {
+            "id": "d2e6013",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m5_padstow.jpg",
+            "region": "SYD_SOUTH",
+            "title": "M5 (Padstow)",
+            "view": "M5 at Fairford Road looking east towards Arncliffe.",
+            "longitude": 151.035648,
+            "latitude": -33.940298
+        },
+        {
+            "id": "d2e6014",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/newenglandhwy_hexham.jpg",
+            "region": "REG_NORTH",
+            "title": "New England Highway (Hexham)",
+            "view": "New England Highway near Hexham Bridge looking south towards Newcastle.",
+            "longitude": 151.682176,
+            "latitude": -32.821351
+        },
+        {
+            "id": "d2e6015",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/newcastlelinkrd_newcastle.jpg",
+            "region": "REG_NORTH",
+            "title": "Newcastle Road (Newcastle)",
+            "view": "Newcastle Road at Crest Road looking west towards M1 Pacific Motorway.",
+            "longitude": 151.687725,
+            "latitude": -32.9044
+        },
+        {
+            "id": "d2e6016",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/princeshwy_albionparkrail.jpg",
+            "region": "REG_SOUTH",
+            "title": "Princes Highway (Albion Park Rail)",
+            "view": "Princes Highway at Airport Road looking north towards Wollongong.",
+            "longitude": 150.791795,
+            "latitude": -34.55638
+        },
+        {
+            "id": "d2e6017",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/princeshwy_sutherland.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Princes Highway (Sutherland)",
+            "view": "Princes Highway at President Avenue looking south towards Waterfall.",
+            "longitude": 151.066129,
+            "latitude": -34.035113
+        },
+        {
+            "id": "d2e6018",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/silverwaterrd_silverwater.jpg",
+            "region": "SYD_WEST",
+            "title": "Silverwater Road (Silverwater)",
+            "view": "Silverwater Road at M4 Western Motorway looking south towards Auburn.",
+            "longitude": 151.043805,
+            "latitude": -33.843141
+        },
+        {
+            "id": "d2e6019",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/princeshwy_wollongong.jpg",
+            "region": "REG_SOUTH",
+            "title": "Princes Highway (Wollongong)",
+            "view": "Princes Highway near Bourke Street looking north towards Bulli.",
+            "longitude": 150.8926,
+            "latitude": -34.412822
+        },
+        {
+            "id": "d2e6020",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/hunterexpressway_m1.jpg",
+            "region": "REG_NORTH",
+            "title": "M1 Pacific Motorway (Hunter Expressway)",
+            "view": "M1 Pacific Motorway at Hunter Expressway looking south towards Sydney.",
+            "longitude": 151.601391,
+            "latitude": -32.88914
+        },
+        {
+            "id": "d2e6021",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m5_arncliffe.jpg",
+            "region": "SYD_MET",
+            "title": "Marsh Street (Arncliffe)",
+            "view": "Marsh Street at West Botany Street looking east towards M5 East on-ramp.",
+            "longitude": 151.151576,
+            "latitude": -33.938402
+        },
+        {
+            "id": "d2e6022",
+            "direction": "N-W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/narelland_campbelltown.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Narellan Road (Campbelltown)",
+            "view": "Narellan Road at Blaxland Road looking north-west towards M1 Hume Motorway.",
+            "longitude": 150.802497,
+            "latitude": -34.067885
+        },
+        {
+            "id": "d2e6023",
+            "direction": "S-E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/parra_ashfield.jpg",
+            "region": "SYD_MET",
+            "title": "Parramatta Road (Ashfield)",
+            "view": "Parramatta Road at Liverpool Road looking south-east towards Sydney.",
+            "longitude": 151.138868,
+            "latitude": -33.886095
+        },
+        {
+            "id": "d2e6024",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/princeshwy_batemans.jpg",
+            "region": "REG_SOUTH",
+            "title": "Princes Highway (Batemans Bay)",
+            "view": "Princes Highway at Beach Road looking north towards Nowra.",
+            "longitude": 150.174801,
+            "latitude": -35.70812
+        },
+        {
+            "id": "d2e6025",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/princeshwy_bulli.jpg",
+            "region": "REG_SOUTH",
+            "title": "Princes Highway (Bulli)",
+            "view": "Princes Highway at Point Street looking north towards Sydney.",
+            "longitude": 150.913954,
+            "latitude": -34.329975
+        },
+        {
+            "id": "d2e6026",
+            "direction": "S",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/alfords_bangorbp.jpg",
+            "region": "SYD_SOUTH",
+            "title": "New Illawarra Road (Bangor Bypass)",
+            "view": "New Illawarra Road at Bangor Bypass looking south towards Lucas Heights.",
+            "longitude": 151.007751,
+            "latitude": -34.023547
+        },
+        {
+            "id": "d2e6027",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/elizabethdr_livepool.jpg",
+            "region": "SYD_SOUTH",
+            "title": "Hume Highway (Elizabeth Drive, Liverpool)",
+            "view": "Hume Highway at Elizabeth Drive looking north toward Lansvale.",
+            "longitude": 150.919356,
+            "latitude": -33.91941
+        },
+        {
+            "id": "d2e6028",
+            "direction": "S-E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/fiveislands_portkembla.jpg",
+            "region": "REG_SOUTH",
+            "title": "Five Islands Road (Port Kembla)",
+            "view": "Five Island Road at Springhill Road Looking south-east towards Warilla.",
+            "longitude": 150.871564,
+            "latitude": -34.465594
+        },
+        {
+            "id": "d2e6029",
+            "direction": "N-E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/homebushbay_homebush.jpg",
+            "region": "SYD_MET",
+            "title": "Homebush Bay Drive (Homebush)",
+            "view": "Homebush Bay Drive at Underwood Road looking north-east towards Ryde.",
+            "longitude": 151.076989,
+            "latitude": -33.85429
+        },
+        {
+            "id": "d2e6030",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/memorialdr_towradge.jpg",
+            "region": "REG_SOUTH",
+            "title": "Memorial Drive (Towradgi)",
+            "view": "Memorial Drive at Towradgi Road looking north towards Bulli.",
+            "longitude": 150.900312,
+            "latitude": -34.383533
+        },
+        {
+            "id": "d2e6031",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/pacifichwy_macksville.jpg",
+            "region": "REG_NORTH",
+            "title": "Pacific Highway (Macksville)",
+            "view": "Pacific Highway at Wallace Street looking north towards Urunga.",
+            "longitude": 152.920825,
+            "latitude": -30.70743
+        },
+        {
+            "id": "d2e6032",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/pennanthills_beecroft.jpg",
+            "region": "SYD_NORTH",
+            "title": "Pennant Hills Road (Beecroft)",
+            "view": "Pennant Hills Road at Beecroft Road looking east towards Pennant Hills.",
+            "longitude": 151.064007,
+            "latitude": -33.740195
+        },
+        {
+            "id": "d2e6033",
+            "direction": "S-W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/pacifichwy_tomago.jpg",
+            "region": "REG_NORTH",
+            "title": "Pacific Highway (Tomago)",
+            "view": "Pacific Highway near Old Punt Road looking south-west towards Hexham.",
+            "longitude": 151.709905,
+            "latitude": -32.809658
+        },
+        {
+            "id": "d2e6034",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/shellharbour_warilla.jpg",
+            "region": "REG_SOUTH",
+            "title": "Shellharbour Road (Warilla)",
+            "view": "Shellharbour Road at Lake Entrance Road looking north towards Port Kembla.",
+            "longitude": 150.859907,
+            "latitude": -34.552399
+        },
+        {
+            "id": "d2e6035",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/yorkst_sydney.jpg",
+            "region": "SYD_MET",
+            "title": "York Street (Sydney)",
+            "view": "York Street at Margaret Street looking north towards Sydney Harbour Bridge.",
+            "longitude": 151.205623,
+            "latitude": -33.865088
+        },
+        {
+            "id": "d2e6036",
+            "direction": "N",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/burntbrdg_seaforth.jpg",
+            "region": "SYD_NORTH",
+            "title": "Burnt Bridge Creek (Balgowlah)",
+            "view": "Burnt Bridge Creek at Condamine Street looking north towards Dee Why.",
+            "longitude": 151.265661,
+            "latitude": -33.788582
+        },
+        {
+            "id": "d2e6037",
+            "direction": "S-E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/kinggeorge_hurstville.jpg",
+            "region": "SYD_MET",
+            "title": "King Georges Road (Hurstville)",
+            "view": "King Georges Road at Woniora Road looking south-east towards Blakehurst.",
+            "longitude": 151.094534,
+            "latitude": -33.965695
+        },
+        {
+            "id": "d2e6038",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/m5_kingsgrove.jpg",
+            "region": "SYD_MET",
+            "title": "M5 (Kinsgrove)",
+            "view": "M5 at Kingsgrove Road looking west towards Beverly Hills.",
+            "longitude": 151.103865,
+            "latitude": -33.937089
+        },
+        {
+            "id": "d2e6039",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/newsthhead_edgecliff.jpg",
+            "region": "SYD_MET",
+            "title": "New South Head Road (Edgecliff)",
+            "view": "New South Head Road at New Beach Road looking east towards Double Bay.",
+            "longitude": 151.231838,
+            "latitude": -33.876651
+        },
+        {
+            "id": "d2e6040",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/oldsthhead_bondi.jpg",
+            "region": "SYD_MET",
+            "title": "Old South Head Road (Bondi Junction)",
+            "view": "Old South Head Road at Bondi Road looking east towards Vaucluse.",
+            "longitude": 151.253425,
+            "latitude": -33.890973
+        },
+        {
+            "id": "d2e6041",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/foreshore_banksmeadow.jpg",
+            "region": "SYD_MET",
+            "title": "Foreshore Road (Banksmeadow)",
+            "view": "Foreshore Road at Botany Road looking west towards Mascot.",
+            "longitude": 151.214619,
+            "latitude": -33.961818
+        },
+        {
+            "id": "d2e6042",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/hunterexp_buchanan.jpg",
+            "region": "REG_NORTH",
+            "title": "Hunter Expressway (Buchanan)",
+            "view": "Hunter Expressway at Buchanan Interchange looking West towards Loxford.",
+            "longitude": 151.529815,
+            "latitude": -32.829628
+        },
+        {
+            "id": "d2e6043",
+            "direction": "E",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/hunterexp_allandale.jpg",
+            "region": "REG_NORTH",
+            "title": "Hunter Expressway and Lovedale Rd",
+            "view": "Hunter Expressway at Allandale Interchange looking East towards Loxford.",
+            "longitude": 151.403663,
+            "latitude": -32.723488
+        },
+        {
+            "id": "d2e6044",
+            "direction": "W",
+            "href": "http://www.rms.nsw.gov.au/trafficreports/cameras/camera_images/hunterexp_branxton.jpg",
+            "region": "REG_NORTH",
+            "title": "Hunter Expressway and Wine Country Dr",
+            "view": "Hunter Expressway at Branxton Interchange looking West towards Belford.",
+            "longitude": 151.361121,
+            "latitude": -32.668371
+        }
+    ],
+    "time": 0.032,
+    "fields": {
+        "id": {
+            "type": "string",
+            "pgtype": "text"
+        },
+        "direction": {
+            "type": "string",
+            "pgtype": "text"
+        },
+        "href": {
+            "type": "string",
+            "pgtype": "text"
+        },
+        "region": {
+            "type": "string",
+            "pgtype": "text"
+        },
+        "title": {
+            "type": "string",
+            "pgtype": "text"
+        },
+        "view": {
+            "type": "string",
+            "pgtype": "text"
+        },
+        "longitude": {
+            "type": "number",
+            "pgtype": "float8"
+        },
+        "latitude": {
+            "type": "number",
+            "pgtype": "float8"
+        }
+    },
+    "total_rows": 112
+}
+

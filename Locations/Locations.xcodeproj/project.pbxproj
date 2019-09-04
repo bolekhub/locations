@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		07E88DC723206D2D0028AA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88DC623206D2D0028AA43 /* AppDelegate.swift */; };
-		07E88DC923206D2D0028AA43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88DC823206D2D0028AA43 /* ViewController.swift */; };
 		07E88DCC23206D2D0028AA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E88DCA23206D2D0028AA43 /* Main.storyboard */; };
 		07E88DCE23206D2E0028AA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E88DCD23206D2E0028AA43 /* Assets.xcassets */; };
 		07E88DD123206D2E0028AA43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E88DCF23206D2E0028AA43 /* LaunchScreen.storyboard */; };
 		07E88DDC23206D2E0028AA43 /* LocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88DDB23206D2E0028AA43 /* LocationsTests.swift */; };
+		07E88DEF23206F960028AA43 /* TrafficAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88DEE23206F960028AA43 /* TrafficAPI.swift */; };
+		07E88DF123206FC50028AA43 /* CameraMetaDataVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88DF023206FC50028AA43 /* CameraMetaDataVO.swift */; };
+		07E88DF3232070430028AA43 /* cams.json in Resources */ = {isa = PBXBuildFile; fileRef = 07E88DF2232070430028AA43 /* cams.json */; };
+		07E88DF5232070710028AA43 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88DF4232070710028AA43 /* Configuration.swift */; };
+		07E88DFB232073B60028AA43 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88DFA232073B60028AA43 /* MasterViewController.swift */; };
+		07E88DFE232073F50028AA43 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88DFD232073F50028AA43 /* MapViewController.swift */; };
+		07E88E012320744D0028AA43 /* TrafficCamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E002320744D0028AA43 /* TrafficCamListViewController.swift */; };
+		07E88E04232074E80028AA43 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E02232074E80028AA43 /* Model.xcdatamodeld */; };
+		07E88E07232075B00028AA43 /* CoreDataDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E06232075B00028AA43 /* CoreDataDAO.swift */; };
+		07E88E09232075CD0028AA43 /* DAOConformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E08232075CD0028AA43 /* DAOConformable.swift */; };
+		07E88E0B232076C50028AA43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E0A232076C50028AA43 /* Constants.swift */; };
+		07E88E0E232078600028AA43 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E0D232078600028AA43 /* DataManager.swift */; };
 		AB4766AE2A5E4E0C972DF43D /* libPods-Locations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D51281593928570D02A12A /* libPods-Locations.a */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +40,6 @@
 /* Begin PBXFileReference section */
 		07E88DC323206D2D0028AA43 /* Locations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E88DC623206D2D0028AA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07E88DC823206D2D0028AA43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07E88DCB23206D2D0028AA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07E88DCD23206D2E0028AA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E88DD023206D2E0028AA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,8 +47,21 @@
 		07E88DD723206D2E0028AA43 /* LocationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E88DDB23206D2E0028AA43 /* LocationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTests.swift; sourceTree = "<group>"; };
 		07E88DDD23206D2E0028AA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E88DEE23206F960028AA43 /* TrafficAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficAPI.swift; sourceTree = "<group>"; };
+		07E88DF023206FC50028AA43 /* CameraMetaDataVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMetaDataVO.swift; sourceTree = "<group>"; };
+		07E88DF2232070430028AA43 /* cams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cams.json; sourceTree = "<group>"; };
+		07E88DF4232070710028AA43 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		07E88DFA232073B60028AA43 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		07E88DFD232073F50028AA43 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		07E88E002320744D0028AA43 /* TrafficCamListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficCamListViewController.swift; sourceTree = "<group>"; };
+		07E88E03232074E80028AA43 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		07E88E06232075B00028AA43 /* CoreDataDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDAO.swift; sourceTree = "<group>"; };
+		07E88E08232075CD0028AA43 /* DAOConformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOConformable.swift; sourceTree = "<group>"; };
+		07E88E0A232076C50028AA43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		07E88E0D232078600028AA43 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		2CF00A105347E63EE529E047 /* Pods-Locations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.release.xcconfig"; sourceTree = "<group>"; };
 		63D51281593928570D02A12A /* libPods-Locations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Locations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D92F6055335F64B2F27ED28 /* Pods-Locations.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.mock.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.mock.xcconfig"; sourceTree = "<group>"; };
 		B29C7758976E160F9FC34BBB /* Pods-Locations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +89,7 @@
 			children = (
 				B29C7758976E160F9FC34BBB /* Pods-Locations.debug.xcconfig */,
 				2CF00A105347E63EE529E047 /* Pods-Locations.release.xcconfig */,
+				9D92F6055335F64B2F27ED28 /* Pods-Locations.mock.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -96,7 +120,6 @@
 				07E88DE723206DD80028AA43 /* Resources */,
 				07E88DE623206DD10028AA43 /* Source */,
 				07E88DC623206D2D0028AA43 /* AppDelegate.swift */,
-				07E88DC823206D2D0028AA43 /* ViewController.swift */,
 				07E88DCA23206D2D0028AA43 /* Main.storyboard */,
 				07E88DCD23206D2E0028AA43 /* Assets.xcassets */,
 				07E88DCF23206D2E0028AA43 /* LaunchScreen.storyboard */,
@@ -117,7 +140,10 @@
 		07E88DE623206DD10028AA43 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				07E88DEB23206E090028AA43 /* Views */,
+				07E88E0C2320784D0028AA43 /* Domain */,
+				07E88E05232075980028AA43 /* DAO */,
+				07E88DED23206F6E0028AA43 /* WService */,
+				07E88DEB23206E090028AA43 /* Scenes */,
 				07E88DEA23206DF70028AA43 /* Model */,
 				07E88DE923206DEF0028AA43 /* Extensions */,
 				07E88DE823206DE90028AA43 /* Common */,
@@ -128,6 +154,8 @@
 		07E88DE723206DD80028AA43 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				07E88DF2232070430028AA43 /* cams.json */,
+				07E88E02232074E80028AA43 /* Model.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -135,6 +163,8 @@
 		07E88DE823206DE90028AA43 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				07E88DF4232070710028AA43 /* Configuration.swift */,
+				07E88E0A232076C50028AA43 /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -149,15 +179,68 @@
 		07E88DEA23206DF70028AA43 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				07E88DF023206FC50028AA43 /* CameraMetaDataVO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		07E88DEB23206E090028AA43 /* Views */ = {
+		07E88DEB23206E090028AA43 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				07E88DFF2320742D0028AA43 /* TrafficCamsListViewController */,
+				07E88DFC232073D20028AA43 /* MapViewController */,
+				07E88DF9232073890028AA43 /* Master */,
 			);
-			path = Views;
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		07E88DED23206F6E0028AA43 /* WService */ = {
+			isa = PBXGroup;
+			children = (
+				07E88DEE23206F960028AA43 /* TrafficAPI.swift */,
+			);
+			name = WService;
+			sourceTree = "<group>";
+		};
+		07E88DF9232073890028AA43 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				07E88DFA232073B60028AA43 /* MasterViewController.swift */,
+			);
+			name = Master;
+			sourceTree = "<group>";
+		};
+		07E88DFC232073D20028AA43 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				07E88DFD232073F50028AA43 /* MapViewController.swift */,
+			);
+			name = MapViewController;
+			sourceTree = "<group>";
+		};
+		07E88DFF2320742D0028AA43 /* TrafficCamsListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				07E88E002320744D0028AA43 /* TrafficCamListViewController.swift */,
+			);
+			name = TrafficCamsListViewController;
+			sourceTree = "<group>";
+		};
+		07E88E05232075980028AA43 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				07E88E06232075B00028AA43 /* CoreDataDAO.swift */,
+				07E88E08232075CD0028AA43 /* DAOConformable.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		07E88E0C2320784D0028AA43 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				07E88E0D232078600028AA43 /* DataManager.swift */,
+			);
+			name = Domain;
 			sourceTree = "<group>";
 		};
 		3D8EB7090919FA1FD56BF3F9 /* Frameworks */ = {
@@ -252,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E88DD123206D2E0028AA43 /* LaunchScreen.storyboard in Resources */,
+				07E88DF3232070430028AA43 /* cams.json in Resources */,
 				07E88DCE23206D2E0028AA43 /* Assets.xcassets in Resources */,
 				07E88DCC23206D2D0028AA43 /* Main.storyboard in Resources */,
 			);
@@ -310,8 +394,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E88DC923206D2D0028AA43 /* ViewController.swift in Sources */,
+				07E88DFB232073B60028AA43 /* MasterViewController.swift in Sources */,
+				07E88E0E232078600028AA43 /* DataManager.swift in Sources */,
+				07E88E0B232076C50028AA43 /* Constants.swift in Sources */,
+				07E88E09232075CD0028AA43 /* DAOConformable.swift in Sources */,
+				07E88E012320744D0028AA43 /* TrafficCamListViewController.swift in Sources */,
+				07E88DFE232073F50028AA43 /* MapViewController.swift in Sources */,
+				07E88E04232074E80028AA43 /* Model.xcdatamodeld in Sources */,
+				07E88DF123206FC50028AA43 /* CameraMetaDataVO.swift in Sources */,
+				07E88E07232075B00028AA43 /* CoreDataDAO.swift in Sources */,
+				07E88DF5232070710028AA43 /* Configuration.swift in Sources */,
 				07E88DC723206D2D0028AA43 /* AppDelegate.swift in Sources */,
+				07E88DEF23206F960028AA43 /* TrafficAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +577,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bcf.Locations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "https://javieraragon.carto.com/api/v2/";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -502,6 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bcf.Locations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = "https://javieraragon.carto.com/api/v2/";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -549,6 +645,108 @@
 			};
 			name = Release;
 		};
+		07E88DF62320708B0028AA43 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Mock;
+		};
+		07E88DF72320708B0028AA43 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D92F6055335F64B2F27ED28 /* Pods-Locations.mock.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVU2BQZ6F9;
+				INFOPLIST_FILE = Locations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bcf.Locations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SERVER_URL = cams.json;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Mock;
+		};
+		07E88DF82320708B0028AA43 /* Mock */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVU2BQZ6F9;
+				INFOPLIST_FILE = LocationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bcf.LocationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Locations.app/Locations";
+			};
+			name = Mock;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -556,6 +754,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07E88DDE23206D2E0028AA43 /* Debug */,
+				07E88DF62320708B0028AA43 /* Mock */,
 				07E88DDF23206D2E0028AA43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -565,6 +764,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07E88DE123206D2E0028AA43 /* Debug */,
+				07E88DF72320708B0028AA43 /* Mock */,
 				07E88DE223206D2E0028AA43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -574,12 +774,26 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07E88DE423206D2E0028AA43 /* Debug */,
+				07E88DF82320708B0028AA43 /* Mock */,
 				07E88DE523206D2E0028AA43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		07E88E02232074E80028AA43 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07E88E03232074E80028AA43 /* Model.xcdatamodel */,
+			);
+			currentVersion = 07E88E03232074E80028AA43 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 07E88DBB23206D2D0028AA43 /* Project object */;
 }

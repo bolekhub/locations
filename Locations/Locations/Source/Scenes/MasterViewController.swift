@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MasterViewController.swift
 //  Locations
 //
 //  Created by Boris Chirino on 05/09/2019.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class MasterViewController: UISplitViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
