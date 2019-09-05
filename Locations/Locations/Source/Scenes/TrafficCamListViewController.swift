@@ -104,9 +104,7 @@ class TrafficCamsViewController: UIViewController, UICollectionViewDataSource, U
         
         return cell!
     }
-    
 
-    
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -147,6 +145,10 @@ private extension TrafficCamsViewController {
     
     func setupView() {
         if UIDevice.current.userInterfaceIdiom == .pad {
+            let t = self.traitCollection.layoutDirection
+            
+            
+            
             collectionView.collectionViewLayout = columnLayout
         }
         collectionView.contentInsetAdjustmentBehavior = .always

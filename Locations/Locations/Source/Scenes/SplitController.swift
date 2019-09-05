@@ -12,12 +12,11 @@ import CoreGraphics
 class SplitController: UISplitViewController {
     
     override func viewWillLayoutSubviews() {
-        
-        let widthfraction:CGFloat = 2.0
-        self.preferredPrimaryColumnWidthFraction = 0.45
+
+        self.preferredPrimaryColumnWidthFraction = 0.35
         let minimumWidth = min((self.view.bounds.size.width),(self.view.bounds.height))
-        self.minimumPrimaryColumnWidth = minimumWidth/widthfraction
-        self.maximumPrimaryColumnWidth = minimumWidth/widthfraction
+        self.minimumPrimaryColumnWidth = minimumWidth/2
+        self.maximumPrimaryColumnWidth = minimumWidth
         
         super.viewWillLayoutSubviews()
     }

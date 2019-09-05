@@ -211,7 +211,7 @@
 		07E88DEB23206E090028AA43 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				07E9784323214055002C5F8C /* Common */,
+				07E9784423214069002C5F8C /* SplitController.swift */,
 				07E88E1123209C4D0028AA43 /* ImageViewController */,
 				07E88DFF2320742D0028AA43 /* Master */,
 				07E88DFC232073D20028AA43 /* Detail */,
@@ -241,6 +241,7 @@
 			children = (
 				07E9784023213A58002C5F8C /* Cell */,
 				07E88E002320744D0028AA43 /* TrafficCamListViewController.swift */,
+				07E9784623214687002C5F8C /* ColumnFlowLayout.swift */,
 			);
 			name = Master;
 			sourceTree = "<group>";
@@ -276,15 +277,6 @@
 				07E9784123213A77002C5F8C /* TrafficCamCollectionViewCell.swift */,
 			);
 			name = Cell;
-			sourceTree = "<group>";
-		};
-		07E9784323214055002C5F8C /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				07E9784423214069002C5F8C /* SplitController.swift */,
-				07E9784623214687002C5F8C /* ColumnFlowLayout.swift */,
-			);
-			name = Common;
 			sourceTree = "<group>";
 		};
 		3D8EB7090919FA1FD56BF3F9 /* Frameworks */ = {

@@ -82,20 +82,7 @@ extension MapViewController: GMSMapViewDelegate{
             imageVC.camIdentifier = metadataId
         }
 
-        imageVC.modalPresentationStyle = .popover
+        imageVC.modalPresentationStyle = UIDevice.current.userInterfaceIdiom == .pad ? .pageSheet : .popover
         self.present(imageVC, animated: true, completion: nil)
     }
-}
-
-
-extension ImageViewController: UIPopoverPresentationControllerDelegate {
-
-    override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
-        if let popController = viewControllerToPresent.popoverPresentationController,
-            popController.sourceView == nil{
-            return
-        }
-        super.present(viewControllerToPresent, animated: flag, completion: completion)
-    }
-    
 }
