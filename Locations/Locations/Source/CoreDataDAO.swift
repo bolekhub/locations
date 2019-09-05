@@ -68,7 +68,7 @@ class CoreDataDAO: DAOConformable  {
                     existingEntity.direction = metaDataItem.direction
                     existingEntity.url = metaDataItem.stringUrl
                     existingEntity.identifier = metaDataItem.id
-                    existingEntity.timestamp = Date.timeStamp()
+                    existingEntity.time = Date.init()
                     existingEntity.lat = metaDataItem.latitude
                     existingEntity.lon = metaDataItem.longitude
                     existingEntity.region = metaDataItem.region
@@ -78,7 +78,7 @@ class CoreDataDAO: DAOConformable  {
                     entity.direction = metaDataItem.direction
                     entity.url = metaDataItem.stringUrl
                     entity.identifier = metaDataItem.id
-                    entity.timestamp = Date.timeStamp()
+                    entity.time = Date.init()
                     entity.lat = metaDataItem.latitude
                     entity.lon = metaDataItem.longitude
                     entity.region = metaDataItem.region
@@ -165,15 +165,3 @@ class CoreDataDAO: DAOConformable  {
 
 
 
-extension Date {
-    
-    static func timeStamp() -> TimeInterval {
-        let now = Date.init()
-        return now.timeIntervalSince1970
-    }
-    
-    static func timestamp(fromTimeInterval interval: TimeInterval) -> TimeInterval{
-        let date = Date.init(timeIntervalSince1970: interval)
-        return date.timeIntervalSince1970 - interval
-    }
-}

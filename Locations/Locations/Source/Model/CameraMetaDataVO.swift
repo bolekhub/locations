@@ -52,20 +52,19 @@ struct CameraMetaDataVO: Codable, Equatable, Hashable {
 
 extension CameraMetaDataVO {
     
-    
+    /// parse a json and convert it to Model object
+    ///
+    /// - Parameter fromJsonResponse: json object
+    /// - Returns: return an array of all parsed items
+    /// - Throws: throw an exception if during parsing an error occurs
     static func from(_ fromJsonResponse: Any?) throws -> [CameraMetaDataVO] {
         
         let jsonDecoder = JSONDecoder.init()
-        
-        let optionalProductsArray = (fromJsonResponse as? NSDictionary)?[kMetadataJsonKeyName]
-        
-        guard let productArray = optionalProductsArray else {
+        let optionalCameraArray = (fromJsonResponse as? NSDictionary)?[kMetadataJsonKeyName]
+        guard let productArray = optionalCameraArray else {
             throw CameraMetaDataParseError.keyNotFound(key: kMetadataJsonKeyName)
         }
-        
-        let productsArrayAsData = try JSONSerialization.data(withJSONObject: productArray,
-                                                             options: .prettyPrinted)
-        
+        let productsArrayAsData = try JSONSerialization.data(withJSONObject: productArray, options: .prettyPrinted)
         return try jsonDecoder.decode([CameraMetaDataVO].self, from: productsArrayAsData)
     }
     

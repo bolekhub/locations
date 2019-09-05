@@ -8,8 +8,8 @@
 
 import UIKit
 
+/// This class is a coordinator handling api and data access
 class DataManager: NSObject {
-    
     
     var api: TrafficAPIConformable?
     var dao: DAOConformable?
@@ -20,6 +20,11 @@ class DataManager: NSObject {
     }
     
     
+    /// get all camera metadata
+    ///
+    /// - Parameters:
+    ///   - parameters: reserved.
+    ///   - completion: if succedd error must be nil, if not the error describing the problem
     func fetchCams(parameters: Parameters?, completion:@escaping (Error?) -> Void) {
         
         self.api?.fetchCams(parameters: parameters, completion: { (response) in
@@ -42,15 +47,25 @@ class DataManager: NSObject {
     }
     
     
+    /// get the image for the trafficMetadata identifier. Preconditions are, image should be in cache and less than 30 seconds ago.
+    /// if that conditions are not meet the image is downloaded from origin again and stored
+    ///
+    /// - Parameters:
+    ///   - id: identifier of the object
+    ///   - completion: return an image if succedd or nil elsewere
     func image(_forMetadataId id: String, completion:@escaping (UIImage?) -> Void) {
         
+        let now = Date.init()
+        
         if let entity = self.dao?.getBy(id: id, context: nil) {
-            if Date.timestamp(fromTimeInterval: entity.timestamp) < 200, let cachedImageData = entity.image {
+            
+            if ((entity.time?.seconds(toDate: now))!) < 30, let cachedImageData = entity.image {
                     completion (UIImage(data: cachedImageData))
             } else {
                 self.api?.getCameraImage(forEntity: entity, completion: { (image) in
                     let imageData = image?.jpegData(compressionQuality: 1)
                     entity.image = imageData
+                    entity.time = Date.init()
                     do {
                         try CoreDataDAO.shared.mainContext?.save()
                     } catch {

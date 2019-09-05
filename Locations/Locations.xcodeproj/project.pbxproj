@@ -26,6 +26,8 @@
 		07E88E0E232078600028AA43 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E0D232078600028AA43 /* DataManager.swift */; };
 		07E88E10232084960028AA43 /* DOHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E0F232084960028AA43 /* DOHUD.swift */; };
 		07E88E1323209C5E0028AA43 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E1223209C5E0028AA43 /* ImageViewController.swift */; };
+		07E88E162320BB310028AA43 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E152320BB310028AA43 /* Date+Helpers.swift */; };
+		07E88E182320CB7D0028AA43 /* ForwardSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E172320CB7D0028AA43 /* ForwardSearchViewController.swift */; };
 		AB4766AE2A5E4E0C972DF43D /* libPods-Locations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D51281593928570D02A12A /* libPods-Locations.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,9 @@
 		07E88E0D232078600028AA43 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		07E88E0F232084960028AA43 /* DOHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOHUD.swift; sourceTree = "<group>"; };
 		07E88E1223209C5E0028AA43 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		07E88E142320B4A50028AA43 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		07E88E152320BB310028AA43 /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
+		07E88E172320CB7D0028AA43 /* ForwardSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardSearchViewController.swift; sourceTree = "<group>"; };
 		2CF00A105347E63EE529E047 /* Pods-Locations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.release.xcconfig"; sourceTree = "<group>"; };
 		63D51281593928570D02A12A /* libPods-Locations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Locations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D92F6055335F64B2F27ED28 /* Pods-Locations.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.mock.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.mock.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +182,7 @@
 		07E88DE923206DEF0028AA43 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				07E88E152320BB310028AA43 /* Date+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 				07E88DFF2320742D0028AA43 /* TrafficCamsListViewController */,
 				07E88DFC232073D20028AA43 /* MapViewController */,
 				07E88DF9232073890028AA43 /* Master */,
+				07E88E172320CB7D0028AA43 /* ForwardSearchViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -391,10 +398,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Locations/Pods-Locations-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -410,8 +419,10 @@
 			files = (
 				07E88DFB232073B60028AA43 /* MasterViewController.swift in Sources */,
 				07E88E0E232078600028AA43 /* DataManager.swift in Sources */,
+				07E88E182320CB7D0028AA43 /* ForwardSearchViewController.swift in Sources */,
 				07E88E0B232076C50028AA43 /* Constants.swift in Sources */,
 				07E88E09232075CD0028AA43 /* DAOConformable.swift in Sources */,
+				07E88E162320BB310028AA43 /* Date+Helpers.swift in Sources */,
 				07E88E012320744D0028AA43 /* TrafficCamListViewController.swift in Sources */,
 				07E88DFE232073F50028AA43 /* MapViewController.swift in Sources */,
 				07E88E04232074E80028AA43 /* Model.xcdatamodeld in Sources */,
@@ -802,6 +813,7 @@
 		07E88E02232074E80028AA43 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				07E88E142320B4A50028AA43 /* Model 2.xcdatamodel */,
 				07E88E03232074E80028AA43 /* Model.xcdatamodel */,
 			);
 			currentVersion = 07E88E03232074E80028AA43 /* Model.xcdatamodel */;

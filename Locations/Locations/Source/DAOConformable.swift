@@ -12,7 +12,7 @@ import CoreData
 /// class conforming this protocol must implement the specific storage . Ex CoreData, Memory, Realm, etc..
 protocol DAOConformable: class {
     
-    /// save an array of PlayListItemVO
+    /// persist an array of PlayListItemVO.
     ///
     /// - Parameter items: array of CameraMetaDataVO
     func batchBackgroundSave(fromModel itemsVO: [CameraMetaDataVO], completion: @escaping (_ success: Bool) -> Void )
@@ -20,7 +20,7 @@ protocol DAOConformable: class {
     /// get a video entity by its identifier
     ///
     /// - Parameter id: identifier
-    /// - Returns: Video entity
+    /// - Returns: TrafficCameraItem entity
     func getBy(id: String, context: NSManagedObjectContext?) -> TrafficCameraItem?
     
     /// Get all entitiies, filtered by if is already cached.
