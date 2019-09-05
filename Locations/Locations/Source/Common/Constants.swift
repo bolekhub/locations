@@ -11,3 +11,4 @@ import Foundation
 let kMetadataJsonKeyName = "rows"
 let kServerURLKey = "ServerURL"
 let kDetailSegueIdentifier = "showDetail_segue"
+let kMainStoryboardIdentifier = "Main"

@@ -12,6 +12,9 @@ class ImageViewController: UIViewController {
 
     var camIdentifier: String?
     var datamanager: DataManager?
+    static var identifier: String {
+        return "image_vc"
+    }
     @IBOutlet weak var imageContainer: UIImageView!
     
     override func viewDidLoad() {

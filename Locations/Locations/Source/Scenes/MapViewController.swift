@@ -74,19 +74,15 @@ extension MapViewController: GMSMapViewDelegate{
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
         
-        let sb = UIStoryboard.init(name: "Main", bundle: nil)
-        guard let imageVC = sb.instantiateViewController(withIdentifier: "image_vc") as? ImageViewController else {
+        let sb = UIStoryboard.init(name: kMainStoryboardIdentifier, bundle: nil)
+        guard let imageVC = sb.instantiateViewController(withIdentifier: ImageViewController.identifier) as? ImageViewController else {
             return
         }
         if let metadataId = marker.userData as? String {
             imageVC.camIdentifier = metadataId
         }
-        guard let anchorView = marker.iconView else {
-            return
-        }
+
         imageVC.modalPresentationStyle = .popover
-        imageVC.popoverPresentationController?.sourceView = marker.iconView!
-        //imageVC.popoverPresentationController?.sourceRect = marker.iconView!.bounds
         self.present(imageVC, animated: true, completion: nil)
     }
 }
