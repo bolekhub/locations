@@ -6,7 +6,7 @@
 //  Copyright © 2019 Home. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class DataManager: NSObject {
     
@@ -39,5 +39,28 @@ class DataManager: NSObject {
                     }
             }
         })
+    }
+    
+    
+    func image(_forMetadataId id: String, completion:@escaping (UIImage?) -> Void) {
+        
+        if let entity = self.dao?.getBy(id: id, context: nil) {
+            if Date.timestamp(fromTimeInterval: entity.timestamp) < 200, let cachedImageData = entity.image {
+                    completion (UIImage(data: cachedImageData))
+            } else {
+                self.api?.getCameraImage(forEntity: entity, completion: { (image) in
+                    let imageData = image?.jpegData(compressionQuality: 1)
+                    entity.image = imageData
+                    do {
+                        try CoreDataDAO.shared.mainContext?.save()
+                    } catch {
+                        
+                    }
+                    completion(image)
+                })
+            }
+        }
+        
+    
     }
 }

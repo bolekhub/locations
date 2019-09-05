@@ -9,10 +9,16 @@
 import UIKit
 import CoreData
 
+
+protocol TCameraSelectedDelegate: class {
+    func trafficCamSelected(_ item: TrafficCameraItem)
+}
+
 class TrafficCamsViewController: UITableViewController {
     
     var datamanager: DataManager?
-
+    var delegate: TCameraSelectedDelegate?
+    
     lazy var fetchController: NSFetchedResultsController<TrafficCameraItem>? = {
         let context = CoreDataDAO.shared.mainContext!
         let fetchRequest = NSFetchRequest<TrafficCameraItem>(entityName: "TrafficCameraItem")
@@ -38,7 +44,9 @@ class TrafficCamsViewController: UITableViewController {
     }
     
     @IBAction func refreshDataAction(_ sender: UIBarButtonItem) {
+        DOHUD.show()
         datamanager?.fetchCams(parameters: nil, completion: { (error) in
+            DOHUD.hide()
             print("ready")
         })
     }
@@ -67,35 +75,27 @@ class TrafficCamsViewController: UITableViewController {
         
         return cell
     }
-}
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let object = self.fetchController?.object(at: indexPath) {
+            self.delegate?.trafficCamSelected(object)
 
-
-extension TrafficCamsViewController: NSFetchedResultsControllerDelegate {
-    
-    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        self.tableView.beginUpdates()
-    }
- 
-    
-    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
-        
-    }
-    
-    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
-        
-        let tableView = self.tableView
-        
-        switch type {
-        case .insert:
-            tableView?.insertRows(at: [newIndexPath!], with: .fade)
-        case .update:
-            tableView.confi
-        default:
-            print("-")
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let mastervc = self.navigationController?.parent as? MasterViewController, let detailvc = self.delegate as? MapViewController {
+            mastervc.showDetailViewController(detailvc, sender: self)
         }
     }
     
+}
+
+// -- > if you are reading data from a background thread—it may be computationally expensive to animate all the changes. Rather than responding to changes individually , you could just implement controllerDidChangeContent(_:) (which is sent to the delegate when all pending changes have been processed) to reload the table view.
+extension TrafficCamsViewController: NSFetchedResultsControllerDelegate {
+    
+
+    
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         self.tableView.endUpdates()
+        self.tableView.reloadData()
     }
 }

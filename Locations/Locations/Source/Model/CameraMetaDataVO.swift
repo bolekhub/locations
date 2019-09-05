@@ -46,6 +46,7 @@ struct CameraMetaDataVO: Codable, Equatable, Hashable {
         hasher.combine(id)
         let _ = hasher.finalize()
     }
+
 }
 
 
@@ -67,4 +68,5 @@ extension CameraMetaDataVO {
         
         return try jsonDecoder.decode([CameraMetaDataVO].self, from: productsArrayAsData)
     }
+    
 }

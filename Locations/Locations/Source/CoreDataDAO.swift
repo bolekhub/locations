@@ -128,7 +128,7 @@ class CoreDataDAO: DAOConformable  {
     }
     
     
-    private func saveContext (context :NSManagedObjectContext) {
+    func saveContext (context :NSManagedObjectContext) {
         
         if context.parent != nil {
             do {
@@ -174,6 +174,6 @@ extension Date {
     
     static func timestamp(fromTimeInterval interval: TimeInterval) -> TimeInterval{
         let date = Date.init(timeIntervalSince1970: interval)
-        return date.timeIntervalSince1970
+        return date.timeIntervalSince1970 - interval
     }
 }

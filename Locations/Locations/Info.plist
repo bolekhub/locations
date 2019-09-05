@@ -20,6 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>rms.nsw.go</key>
+			<string></string>
+		</dict>
+	</dict>
 	<key>ServerURL</key>
 	<string>$(SERVER_URL)</string>
 	<key>UILaunchStoryboardName</key>

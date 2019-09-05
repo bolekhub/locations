@@ -33,6 +33,7 @@ typealias APIResponse =  Result<[CameraMetaDataVO]?, Error>
 /// interface exposing web service contract
 protocol TrafficAPIConformable: class {
     func fetchCams(parameters: Parameters?, completion:@escaping (APIResponse)->Void)
+    func getCameraImage(forEntity entity: TrafficCameraItem, completion:@escaping (UIImage?) -> Void)
 }
 
 /// Class to handle all network request
@@ -95,8 +96,16 @@ class TrafficAPI: NSObject, TrafficAPIConformable {
     }
     
     
-    class func updateCameraImage(forMetadataIdentifier identifier: String) {
-        
-        
+    func getCameraImage(forEntity entity: TrafficCameraItem, completion:@escaping (UIImage?) -> Void) {
+        AF.download(entity.url!)
+            .responseData { (response) in
+                do {
+                    let im = try UIImage(data: response.result.get())
+                    completion(im)
+                }catch {
+                    completion(nil)
+                    print("error \(error.localizedDescription)")
+                }
+        }
     }
 }

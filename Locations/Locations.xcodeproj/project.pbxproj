@@ -24,6 +24,8 @@
 		07E88E09232075CD0028AA43 /* DAOConformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E08232075CD0028AA43 /* DAOConformable.swift */; };
 		07E88E0B232076C50028AA43 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E0A232076C50028AA43 /* Constants.swift */; };
 		07E88E0E232078600028AA43 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E0D232078600028AA43 /* DataManager.swift */; };
+		07E88E10232084960028AA43 /* DOHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E0F232084960028AA43 /* DOHUD.swift */; };
+		07E88E1323209C5E0028AA43 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E1223209C5E0028AA43 /* ImageViewController.swift */; };
 		AB4766AE2A5E4E0C972DF43D /* libPods-Locations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D51281593928570D02A12A /* libPods-Locations.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		07E88E08232075CD0028AA43 /* DAOConformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOConformable.swift; sourceTree = "<group>"; };
 		07E88E0A232076C50028AA43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		07E88E0D232078600028AA43 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		07E88E0F232084960028AA43 /* DOHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOHUD.swift; sourceTree = "<group>"; };
+		07E88E1223209C5E0028AA43 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		2CF00A105347E63EE529E047 /* Pods-Locations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.release.xcconfig"; sourceTree = "<group>"; };
 		63D51281593928570D02A12A /* libPods-Locations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Locations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D92F6055335F64B2F27ED28 /* Pods-Locations.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.mock.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.mock.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 		07E88DE823206DE90028AA43 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				07E88E0F232084960028AA43 /* DOHUD.swift */,
 				07E88DF4232070710028AA43 /* Configuration.swift */,
 				07E88E0A232076C50028AA43 /* Constants.swift */,
 			);
@@ -187,6 +192,7 @@
 		07E88DEB23206E090028AA43 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				07E88E1123209C4D0028AA43 /* ImageViewController */,
 				07E88DFF2320742D0028AA43 /* TrafficCamsListViewController */,
 				07E88DFC232073D20028AA43 /* MapViewController */,
 				07E88DF9232073890028AA43 /* Master */,
@@ -241,6 +247,14 @@
 				07E88E0D232078600028AA43 /* DataManager.swift */,
 			);
 			name = Domain;
+			sourceTree = "<group>";
+		};
+		07E88E1123209C4D0028AA43 /* ImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				07E88E1223209C5E0028AA43 /* ImageViewController.swift */,
+			);
+			name = ImageViewController;
 			sourceTree = "<group>";
 		};
 		3D8EB7090919FA1FD56BF3F9 /* Frameworks */ = {
@@ -404,8 +418,10 @@
 				07E88DF123206FC50028AA43 /* CameraMetaDataVO.swift in Sources */,
 				07E88E07232075B00028AA43 /* CoreDataDAO.swift in Sources */,
 				07E88DF5232070710028AA43 /* Configuration.swift in Sources */,
+				07E88E1323209C5E0028AA43 /* ImageViewController.swift in Sources */,
 				07E88DC723206D2D0028AA43 /* AppDelegate.swift in Sources */,
 				07E88DEF23206F960028AA43 /* TrafficAPI.swift in Sources */,
+				07E88E10232084960028AA43 /* DOHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
