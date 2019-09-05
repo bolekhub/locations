@@ -9,10 +9,25 @@ import UIKit
 import CoreData
 
 protocol TCameraSelectedDelegate: class {
+    /// forward the selected item to the object conforming to this protocol
+    ///
+    /// - Parameter item: model item
     func trafficCamSelected(_ item: TrafficCameraItem)
 }
 
-class TrafficCamsViewController: UITableViewController {
+class TrafficCamsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    lazy var columnLayout: ColumnFlowLayout = {
+        let _columnLayout = ColumnFlowLayout(
+            cellsPerRow: 2,
+            minimumInteritemSpacing: 10,
+            minimumLineSpacing: 10,
+            sectionInset: UIEdgeInsets(top: 5, left: 5, bottom: 3, right: 5))
+        return _columnLayout
+    }()
+    
     
     /// avoid that on startup in a horizontal compact size the split view controller collapse
     fileprivate var collapseDetailViewController = true
@@ -29,6 +44,7 @@ class TrafficCamsViewController: UITableViewController {
     /// keep in sync the model from coredata and the ui. On initial fetch of all dataset, a background thread handle all
     /// ssave operations, once all saved the change is merged to parent context wich notify FRC and update the UI
     lazy var fetchController: NSFetchedResultsController<TrafficCameraItem>? = {
+        
         let context = CoreDataDAO.shared.mainContext!
         let fetchRequest = NSFetchRequest<TrafficCameraItem>(entityName: "TrafficCameraItem")
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
@@ -61,17 +77,16 @@ class TrafficCamsViewController: UITableViewController {
     }
     
     
-    //MARK: - UITableViewDataSource, UITableViewDelegate
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
+    //MARK: - UICollectionView delegate , datasource
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         if let frc = self.fetchController {
             return frc.sections!.count
         }
         return 0
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let sections = self.fetchController?.sections else {
             fatalError("No sections in fetchedResultsController")
         }
@@ -79,33 +94,35 @@ class TrafficCamsViewController: UITableViewController {
         return sectionInfo.numberOfObjects
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "subtitle_cell", for: indexPath)
+
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrafficCamCollectionViewCell.identifier, for: indexPath) as? TrafficCamCollectionViewCell
         if let object = self.fetchController?.object(at: indexPath) {
-            cell.textLabel?.text = object.title
-            cell.detailTextLabel?.text = object.view
+            cell?.configure(withItem: object)
         }
         
-        return cell
+        return cell!
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let object = self.fetchController?.object(at: indexPath) {
             delegate?.trafficCamSelected(object)
         }
-
+        
         if let detailvc = self.delegate as? MapViewController, let detailNavigationController = detailvc.navigationController  {
             self.splitViewController?.showDetailViewController(detailNavigationController, sender: nil)
         }
-
+        
         collapseDetailViewController = true
-        tableView.deselectRow(at: indexPath, animated: true)
+        collectionView.deselectItem(at: indexPath, animated: true)
     }
     
 
- 
-    
 }
 
 
@@ -116,7 +133,7 @@ private extension TrafficCamsViewController {
         let predicate = NSPredicate(format: "%K CONTAINS[cd] %@", scope, search)
         fetchController?.fetchRequest.predicate = predicate
         fetchControllerFetch()
-        tableView.reloadData()
+        collectionView.reloadData()
     }
     
      func fetchControllerFetch() {
@@ -125,12 +142,14 @@ private extension TrafficCamsViewController {
         }catch {
             print("An error ocurred \(error.localizedDescription)")
         }
-        tableView.reloadData()
+        collectionView.reloadData()
     }
     
     func setupView() {
-        //self.splitViewController?.maximumPrimaryColumnWidth = UIScreen.main.bounds.width/2
-        //self.splitViewController?.minimumPrimaryColumnWidth = UIScreen.main.bounds.width/2
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            collectionView.collectionViewLayout = columnLayout
+        }
+        collectionView.contentInsetAdjustmentBehavior = .always
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -138,6 +157,9 @@ private extension TrafficCamsViewController {
         searchController.searchBar.scopeButtonTitles = ["Title", "Region"]
         navigationItem.searchController = searchController
         definesPresentationContext = true
+        
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
     }
 }
 
@@ -147,8 +169,8 @@ private extension TrafficCamsViewController {
 extension TrafficCamsViewController: NSFetchedResultsControllerDelegate {
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        self.tableView.endUpdates()
-        self.tableView.reloadData()
+        
+        collectionView.reloadData()
     }
 }
 

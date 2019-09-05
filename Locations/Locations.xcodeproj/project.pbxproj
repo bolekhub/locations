@@ -28,6 +28,11 @@
 		07E88E162320BB310028AA43 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E152320BB310028AA43 /* Date+Helpers.swift */; };
 		07E88E182320CB7D0028AA43 /* ForwardSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E88E172320CB7D0028AA43 /* ForwardSearchViewController.swift */; };
 		07E9783F2320F496002C5F8C /* URL+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9783E2320F496002C5F8C /* URL+Helpers.swift */; };
+		07E9784223213A77002C5F8C /* TrafficCamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9784123213A77002C5F8C /* TrafficCamCollectionViewCell.swift */; };
+		07E9784523214069002C5F8C /* SplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9784423214069002C5F8C /* SplitController.swift */; };
+		07E9784723214687002C5F8C /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9784623214687002C5F8C /* ColumnFlowLayout.swift */; };
+		07E97849232156DE002C5F8C /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E97848232156DE002C5F8C /* UIColor+Helper.swift */; };
+		07E9784B232159E8002C5F8C /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9784A232159E8002C5F8C /* UIImage+Helpers.swift */; };
 		AB4766AE2A5E4E0C972DF43D /* libPods-Locations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D51281593928570D02A12A /* libPods-Locations.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +73,11 @@
 		07E88E152320BB310028AA43 /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
 		07E88E172320CB7D0028AA43 /* ForwardSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardSearchViewController.swift; sourceTree = "<group>"; };
 		07E9783E2320F496002C5F8C /* URL+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Helpers.swift"; sourceTree = "<group>"; };
+		07E9784123213A77002C5F8C /* TrafficCamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficCamCollectionViewCell.swift; sourceTree = "<group>"; };
+		07E9784423214069002C5F8C /* SplitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitController.swift; sourceTree = "<group>"; };
+		07E9784623214687002C5F8C /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
+		07E97848232156DE002C5F8C /* UIColor+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helper.swift"; sourceTree = "<group>"; };
+		07E9784A232159E8002C5F8C /* UIImage+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
 		2CF00A105347E63EE529E047 /* Pods-Locations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.release.xcconfig"; sourceTree = "<group>"; };
 		63D51281593928570D02A12A /* libPods-Locations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Locations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D92F6055335F64B2F27ED28 /* Pods-Locations.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.mock.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.mock.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +194,8 @@
 			children = (
 				07E88E152320BB310028AA43 /* Date+Helpers.swift */,
 				07E9783E2320F496002C5F8C /* URL+Helpers.swift */,
+				07E97848232156DE002C5F8C /* UIColor+Helper.swift */,
+				07E9784A232159E8002C5F8C /* UIImage+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +211,7 @@
 		07E88DEB23206E090028AA43 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				07E9784323214055002C5F8C /* Common */,
 				07E88E1123209C4D0028AA43 /* ImageViewController */,
 				07E88DFF2320742D0028AA43 /* Master */,
 				07E88DFC232073D20028AA43 /* Detail */,
@@ -226,6 +239,7 @@
 		07E88DFF2320742D0028AA43 /* Master */ = {
 			isa = PBXGroup;
 			children = (
+				07E9784023213A58002C5F8C /* Cell */,
 				07E88E002320744D0028AA43 /* TrafficCamListViewController.swift */,
 			);
 			name = Master;
@@ -254,6 +268,23 @@
 				07E88E1223209C5E0028AA43 /* ImageViewController.swift */,
 			);
 			name = ImageViewController;
+			sourceTree = "<group>";
+		};
+		07E9784023213A58002C5F8C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				07E9784123213A77002C5F8C /* TrafficCamCollectionViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		07E9784323214055002C5F8C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				07E9784423214069002C5F8C /* SplitController.swift */,
+				07E9784623214687002C5F8C /* ColumnFlowLayout.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		3D8EB7090919FA1FD56BF3F9 /* Frameworks */ = {
@@ -412,9 +443,12 @@
 				07E9783F2320F496002C5F8C /* URL+Helpers.swift in Sources */,
 				07E88E0E232078600028AA43 /* DataManager.swift in Sources */,
 				07E88E182320CB7D0028AA43 /* ForwardSearchViewController.swift in Sources */,
+				07E9784B232159E8002C5F8C /* UIImage+Helpers.swift in Sources */,
+				07E97849232156DE002C5F8C /* UIColor+Helper.swift in Sources */,
 				07E88E0B232076C50028AA43 /* Constants.swift in Sources */,
 				07E88E09232075CD0028AA43 /* DAOConformable.swift in Sources */,
 				07E88E162320BB310028AA43 /* Date+Helpers.swift in Sources */,
+				07E9784523214069002C5F8C /* SplitController.swift in Sources */,
 				07E88E012320744D0028AA43 /* TrafficCamListViewController.swift in Sources */,
 				07E88DFE232073F50028AA43 /* MapViewController.swift in Sources */,
 				07E88E04232074E80028AA43 /* Model.xcdatamodeld in Sources */,
@@ -424,7 +458,9 @@
 				07E88E1323209C5E0028AA43 /* ImageViewController.swift in Sources */,
 				07E88DC723206D2D0028AA43 /* AppDelegate.swift in Sources */,
 				07E88DEF23206F960028AA43 /* TrafficAPI.swift in Sources */,
+				07E9784723214687002C5F8C /* ColumnFlowLayout.swift in Sources */,
 				07E88E10232084960028AA43 /* DOHUD.swift in Sources */,
+				07E9784223213A77002C5F8C /* TrafficCamCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
