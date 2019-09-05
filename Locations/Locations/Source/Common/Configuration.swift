@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Will contain all global configuration
 class Configuration {
     
     fileprivate static let bundle = Bundle.main

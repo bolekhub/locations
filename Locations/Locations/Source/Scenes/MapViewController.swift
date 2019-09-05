@@ -15,6 +15,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         return self.view as! GMSMapView
     }
     
+    var selectedItem: TrafficCameraItem?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Create a GMSCameraPosition that tells the map to display the
@@ -38,7 +40,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         let marker = GMSMarker(position: coordinate)
         marker.snippet = metadata.region
         marker.title = metadata.title
-        marker.map = self.view as? GMSMapView
+        marker.map = self.mapView
         marker.userData = metadata.identifier
     }
 }
@@ -70,8 +72,12 @@ extension MapViewController {
         if let metadataId = marker.userData as? String {
             imageVC.camIdentifier = metadataId
         }
+        guard let anchorView = marker.iconView else {
+            return
+        }
+        imageVC.popoverPresentationController?.sourceView = anchorView
         imageVC.modalPresentationStyle = .popover
-        imageVC.popoverPresentationController?.sourceView = marker.iconView
+
         self.present(imageVC, animated: true, completion: nil)
     }
 }

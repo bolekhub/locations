@@ -14,10 +14,20 @@ protocol TCameraSelectedDelegate: class {
 
 class TrafficCamsViewController: UITableViewController {
     
+    /// avoid that on startup in a horizontal compact size the split view controller collapse
+    fileprivate var collapseDetailViewController = true
+    
+    /// coordinator between api and data access
     var datamanager: DataManager?
-    var delegate: TCameraSelectedDelegate?
+    
+    /// send the selected object to detail vc
+    weak var delegate: TCameraSelectedDelegate?
+    
+    /// filter table elements
     let searchController = UISearchController(searchResultsController: nil)
     
+    /// keep in sync the model from coredata and the ui. On initial fetch of all dataset, a background thread handle all
+    /// ssave operations, once all saved the change is merged to parent context wich notify FRC and update the UI
     lazy var fetchController: NSFetchedResultsController<TrafficCameraItem>? = {
         let context = CoreDataDAO.shared.mainContext!
         let fetchRequest = NSFetchRequest<TrafficCameraItem>(entityName: "TrafficCameraItem")
@@ -35,7 +45,6 @@ class TrafficCamsViewController: UITableViewController {
     //MARK: - ViewLifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "Traffic Cams"
         datamanager = DataManager(api: TrafficAPI.default, dao: CoreDataDAO.shared)
         setupView()
@@ -44,17 +53,17 @@ class TrafficCamsViewController: UITableViewController {
     
     //MARK: - UI Actions
     @IBAction func refreshDataAction(_ sender: UIBarButtonItem) {
+        
         DOHUD.show()
-        datamanager?.fetchCams(parameters: nil, completion: { (error) in
+        datamanager?.fetchCams( completion: { (error) in
             DOHUD.hide()
-            print("ready")
         })
     }
     
     
-    
     //MARK: - UITableViewDataSource, UITableViewDelegate
     override func numberOfSections(in tableView: UITableView) -> Int {
+        
         if let frc = self.fetchController {
             return frc.sections!.count
         }
@@ -62,6 +71,7 @@ class TrafficCamsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         guard let sections = self.fetchController?.sections else {
             fatalError("No sections in fetchedResultsController")
         }
@@ -80,16 +90,21 @@ class TrafficCamsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         if let object = self.fetchController?.object(at: indexPath) {
-            self.delegate?.trafficCamSelected(object)
+            delegate?.trafficCamSelected(object)
+        }
 
+        if let detailvc = self.delegate as? MapViewController, let detailNavigationController = detailvc.navigationController  {
+            self.splitViewController?.showDetailViewController(detailNavigationController, sender: nil)
         }
+
+        collapseDetailViewController = true
         tableView.deselectRow(at: indexPath, animated: true)
-        if let mastervc = self.navigationController?.parent as? MasterViewController, let detailvc = self.delegate as? MapViewController {
-            mastervc.showDetailViewController(detailvc, sender: self)
-        }
     }
     
+
+ 
     
 }
 
@@ -114,6 +129,8 @@ private extension TrafficCamsViewController {
     }
     
     func setupView() {
+        //self.splitViewController?.maximumPrimaryColumnWidth = UIScreen.main.bounds.width/2
+        //self.splitViewController?.minimumPrimaryColumnWidth = UIScreen.main.bounds.width/2
         searchController.searchResultsUpdater = self
         searchController.searchBar.delegate = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -128,6 +145,7 @@ private extension TrafficCamsViewController {
     // Rather than responding to changes individually , you could just implement controllerDidChangeContent(_:)
     // (which is sent to the delegate when all pending changes have been processed) to reload the table view.
 extension TrafficCamsViewController: NSFetchedResultsControllerDelegate {
+    
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         self.tableView.endUpdates()
         self.tableView.reloadData()
@@ -136,7 +154,8 @@ extension TrafficCamsViewController: NSFetchedResultsControllerDelegate {
 
 
 //MARK: - UISearchResultsUpdating
-extension TrafficCamsViewController: UISearchResultsUpdating, UISearchBarDelegate{
+extension TrafficCamsViewController: UISearchResultsUpdating, UISearchBarDelegate {
+    
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text, !text.isEmpty   else {
             fetchController?.fetchRequest.predicate = nil

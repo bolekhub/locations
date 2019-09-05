@@ -25,9 +25,9 @@ class DataManager: NSObject {
     /// - Parameters:
     ///   - parameters: reserved.
     ///   - completion: if succedd error must be nil, if not the error describing the problem
-    func fetchCams(parameters: Parameters?, completion:@escaping (Error?) -> Void) {
+    func fetchCams( completion:@escaping (Error?) -> Void) {
         
-        self.api?.fetchCams(parameters: parameters, completion: { (response) in
+        self.api?.fetchCams( completion: { (response) in
             
             switch response {
                 case .success(let items):

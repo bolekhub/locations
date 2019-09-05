@@ -20,10 +20,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cmC-7M-nk6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KYu-my-TZj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZG-qt-zUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="528" y="455"/>
+            <point key="canvasLocation" x="1472" y="532"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="UKD-AQ-aLT">
@@ -66,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COC-Mg-Su9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1467" y="455"/>
+            <point key="canvasLocation" x="3218.840579710145" y="507.58928571428567"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="3k7-0t-A0E">
@@ -172,18 +173,36 @@
             </objects>
             <point key="canvasLocation" x="528" y="-193"/>
         </scene>
-        <!--Master View Controller-->
+        <!--Split View Controller-->
         <scene sceneID="Bkm-X8-hII">
             <objects>
-                <splitViewController id="viv-Rc-JEg" customClass="MasterViewController" customModule="Locations" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="viv-Rc-JEg" sceneMemberID="viewController">
                     <connections>
                         <segue destination="630-69-hto" kind="relationship" relationship="masterViewController" id="zOX-OW-jCd"/>
-                        <segue destination="duA-iq-y9V" kind="relationship" relationship="detailViewController" id="t14-2L-8Qh"/>
+                        <segue destination="HuF-hr-l7D" kind="relationship" relationship="detailViewController" id="t14-2L-8Qh"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wL-Se-Bvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-390" y="130"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xrk-wl-QgH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HuF-hr-l7D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dAo-9p-OL4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="duA-iq-y9V" kind="relationship" relationship="rootViewController" id="OIA-Sc-czI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUr-wc-SKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="533"/>
         </scene>
     </scenes>
 </document>

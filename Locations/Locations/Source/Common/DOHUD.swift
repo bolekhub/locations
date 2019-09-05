@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Provide a spinner to indicate activity
 class DOHUD : UIView{
     
     //MARK: - iVars

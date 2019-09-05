@@ -12,27 +12,12 @@ import Foundation
 import Alamofire
 import MapKit
 
-struct Parameters: Encodable  {
-    var lat: CLLocationDegrees
-    var lon: CLLocationDegrees
-    
-    enum CodingKeys: String, CodingKey {
-        case lat
-        case lon
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(lat, forKey: .lat)
-        try container.encode(lon, forKey: .lon)
-    }
-}
 
 typealias APIResponse =  Result<[CameraMetaDataVO]?, Error>
 
 /// interface exposing web service contract
 protocol TrafficAPIConformable: class {
-    func fetchCams(parameters: Parameters?, completion:@escaping (APIResponse)->Void)
+    func fetchCams(completion:@escaping (APIResponse)->Void)
     func getCameraImage(forEntity entity: TrafficCameraItem, completion:@escaping (UIImage?) -> Void)
 }
 
@@ -58,7 +43,7 @@ class TrafficAPI: NSObject, TrafficAPIConformable {
             return nil
         }
         
-        return Configuration.serverURL
+        return serverurl
     }()
     
     
@@ -69,15 +54,20 @@ class TrafficAPI: NSObject, TrafficAPIConformable {
     /// - Parameters:
     ///   - parameters: reserved
     ///   - completion: response containing APIResponse
-    func fetchCams(parameters: Parameters? = nil, completion:@escaping (APIResponse)->Void) {
+    func fetchCams(completion:@escaping (APIResponse)->Void) {
         
-        // let strParams = String(format: "sql?q=SELECT id, direction, href, region, title, view, %.4f, %.4f FROM ios_test", parameters?.lon ?? 151.20, parameters?.lat ?? -33.86)
+        let strParams = "SELECT id,direction,href,region,title,view,ST_X(the_geom)aslongitude,ST_Y(the_geom)aslatitude FROM ios_test"
+        
+        var requestURL = TrafficAPI.default.endpoint!
+        
+        if (TrafficAPI.default.endpoint?.host != nil) {
+            let finalUrl = requestURL.appending("q", value: strParams)
+            requestURL = finalUrl
+        }
         
         let dataRequest =
-            AF.request(TrafficAPI.default.endpoint!,
-                       method: .get,
-                       parameters: parameters,
-                       encoder: URLEncodedFormParameterEncoder(destination: .queryString))
+            AF.request(requestURL,
+                       method: .get, parameters: nil, encoding: URLEncoding.default)
                 .validate()
                 .responseJSON { (response) in
                     switch response.result {
