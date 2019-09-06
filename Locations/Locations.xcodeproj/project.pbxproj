@@ -33,6 +33,8 @@
 		07E9784723214687002C5F8C /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9784623214687002C5F8C /* ColumnFlowLayout.swift */; };
 		07E97849232156DE002C5F8C /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E97848232156DE002C5F8C /* UIColor+Helper.swift */; };
 		07E9784B232159E8002C5F8C /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9784A232159E8002C5F8C /* UIImage+Helpers.swift */; };
+		07E9784D2321CD3D002C5F8C /* Notification+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9784C2321CD3D002C5F8C /* Notification+Names.swift */; };
+		07E978502321EC35002C5F8C /* GoogleMaps+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E9784F2321EC35002C5F8C /* GoogleMaps+Helpers.swift */; };
 		AB4766AE2A5E4E0C972DF43D /* libPods-Locations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D51281593928570D02A12A /* libPods-Locations.a */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		07E9784623214687002C5F8C /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
 		07E97848232156DE002C5F8C /* UIColor+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helper.swift"; sourceTree = "<group>"; };
 		07E9784A232159E8002C5F8C /* UIImage+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
+		07E9784C2321CD3D002C5F8C /* Notification+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Names.swift"; sourceTree = "<group>"; };
+		07E9784F2321EC35002C5F8C /* GoogleMaps+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoogleMaps+Helpers.swift"; sourceTree = "<group>"; };
 		2CF00A105347E63EE529E047 /* Pods-Locations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.release.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.release.xcconfig"; sourceTree = "<group>"; };
 		63D51281593928570D02A12A /* libPods-Locations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Locations.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D92F6055335F64B2F27ED28 /* Pods-Locations.mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locations.mock.xcconfig"; path = "Pods/Target Support Files/Pods-Locations/Pods-Locations.mock.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 				07E9783E2320F496002C5F8C /* URL+Helpers.swift */,
 				07E97848232156DE002C5F8C /* UIColor+Helper.swift */,
 				07E9784A232159E8002C5F8C /* UIImage+Helpers.swift */,
+				07E9784C2321CD3D002C5F8C /* Notification+Names.swift */,
+				07E9784F2321EC35002C5F8C /* GoogleMaps+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -239,9 +245,9 @@
 		07E88DFF2320742D0028AA43 /* Master */ = {
 			isa = PBXGroup;
 			children = (
+				07E9784E2321DC2E002C5F8C /* Layout */,
 				07E9784023213A58002C5F8C /* Cell */,
 				07E88E002320744D0028AA43 /* TrafficCamListViewController.swift */,
-				07E9784623214687002C5F8C /* ColumnFlowLayout.swift */,
 			);
 			name = Master;
 			sourceTree = "<group>";
@@ -277,6 +283,14 @@
 				07E9784123213A77002C5F8C /* TrafficCamCollectionViewCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		07E9784E2321DC2E002C5F8C /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				07E9784623214687002C5F8C /* ColumnFlowLayout.swift */,
+			);
+			name = Layout;
 			sourceTree = "<group>";
 		};
 		3D8EB7090919FA1FD56BF3F9 /* Frameworks */ = {
@@ -433,7 +447,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E9783F2320F496002C5F8C /* URL+Helpers.swift in Sources */,
+				07E9784D2321CD3D002C5F8C /* Notification+Names.swift in Sources */,
 				07E88E0E232078600028AA43 /* DataManager.swift in Sources */,
+				07E978502321EC35002C5F8C /* GoogleMaps+Helpers.swift in Sources */,
 				07E88E182320CB7D0028AA43 /* ForwardSearchViewController.swift in Sources */,
 				07E9784B232159E8002C5F8C /* UIImage+Helpers.swift in Sources */,
 				07E97849232156DE002C5F8C /* UIColor+Helper.swift in Sources */,

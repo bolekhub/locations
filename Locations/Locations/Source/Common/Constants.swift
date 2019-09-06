@@ -12,3 +12,5 @@ let kMetadataJsonKeyName = "rows"
 let kServerURLKey = "ServerURL"
 let kDetailSegueIdentifier = "showDetail_segue"
 let kMainStoryboardIdentifier = "Main"
+let kNotificationCoordinateKey = "coordinate"
+let kDefaultSearchRadio: Double = 3000

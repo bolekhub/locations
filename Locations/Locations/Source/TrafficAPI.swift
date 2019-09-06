@@ -56,7 +56,7 @@ class TrafficAPI: NSObject, TrafficAPIConformable {
     ///   - completion: response containing APIResponse
     func fetchCams(completion:@escaping (APIResponse)->Void) {
         
-        let strParams = "SELECT id,direction,href,region,title,view,ST_X(the_geom)aslongitude,ST_Y(the_geom)aslatitude FROM ios_test"
+        let strParams = "SELECT id,direction,href,region,title,view,ST_X(the_geom)longitude,ST_Y(the_geom)latitude FROM ios_test"
         
         var requestURL = TrafficAPI.default.endpoint!
         

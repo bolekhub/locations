@@ -7,6 +7,8 @@
 //
 import UIKit
 import CoreData
+import GoogleMaps
+import MapKit
 
 protocol TCameraSelectedDelegate: class {
     /// forward the selected item to the object conforming to this protocol
@@ -15,7 +17,7 @@ protocol TCameraSelectedDelegate: class {
     func trafficCamSelected(_ item: TrafficCameraItem)
 }
 
-class TrafficCamsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class TrafficCamsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -65,20 +67,61 @@ class TrafficCamsViewController: UIViewController, UICollectionViewDataSource, U
         datamanager = DataManager(api: TrafficAPI.default, dao: CoreDataDAO.shared)
         setupView()
         fetchControllerFetch()
+        NotificationCenter.default.addObserver(self, selector: #selector(coordinatesReceived), name: .showCoordinate, object: nil)
     }
     
     //MARK: - UI Actions
     @IBAction func refreshDataAction(_ sender: UIBarButtonItem) {
-        
+        self.fetchController?.fetchRequest.predicate = nil
         DOHUD.show()
         datamanager?.fetchCams( completion: { (error) in
             DOHUD.hide()
         })
     }
     
+    @objc func coordinatesReceived(_ note: Notification) {
+        if let center = note.userInfo?[kNotificationCoordinateKey] as? CLLocationCoordinate2D {
+            
+            
+            let circle = GMSCircle(position: center, radius: kDefaultSearchRadio)
+            let boundingBox = circle.bounds()
+            
+            
+            /*
+             NSPredicate *pred = [NSPredicate predicateWithFormat:@"latitude <= %f AND longitude >= %f AND latitude >= %f AND longitude <= %f", topCord.latitude,topCord.longitude,bottomCord.latitude,bottomCord.longitude];
+             
+             const isInsideSquare = (center, northEast, southWest) =>
+             southWest.lat < center.lat  &&
+             northEast.lat  > center.lat &&
+             northEast.lng  > center.lng && // <-- this condition reversed
+             southWest.lng < center.lng;    //
+             */
+            
+            let predicate = NSPredicate(format: "%f < lat AND %f > lat AND %f > lon AND %f < lon",
+                                        boundingBox.southWest.latitude,
+                                        boundingBox.northEast.latitude,
+                                        boundingBox.northEast.longitude,
+                                        boundingBox.southWest.longitude)
+            
+            self.fetchController?.fetchRequest.predicate = predicate
+            fetchControllerFetch()
+            
+        }
+    }
     
-    //MARK: - UICollectionView delegate , datasource
-    
+    func filterContentforText(_ search: String, scope: String = "A") {
+        let predicate = NSPredicate(format: "%K CONTAINS[cd] %@", scope, search)
+        fetchController?.fetchRequest.predicate = predicate
+        fetchControllerFetch()
+        collectionView.reloadData()
+    }
+
+}
+
+
+
+extension TrafficCamsViewController: UICollectionViewDataSource {
+
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         if let frc = self.fetchController {
             return frc.sections!.count
@@ -94,7 +137,7 @@ class TrafficCamsViewController: UIViewController, UICollectionViewDataSource, U
         return sectionInfo.numberOfObjects
     }
     
-
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrafficCamCollectionViewCell.identifier, for: indexPath) as? TrafficCamCollectionViewCell
@@ -104,9 +147,10 @@ class TrafficCamsViewController: UIViewController, UICollectionViewDataSource, U
         
         return cell!
     }
+}
 
-    
-    
+
+extension TrafficCamsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let object = self.fetchController?.object(at: indexPath) {
             delegate?.trafficCamSelected(object)
@@ -119,51 +163,8 @@ class TrafficCamsViewController: UIViewController, UICollectionViewDataSource, U
         collapseDetailViewController = true
         collectionView.deselectItem(at: indexPath, animated: true)
     }
-    
-
 }
 
-
-// MARK: - Private instance methods
-private extension TrafficCamsViewController {
-    
-     func filterContentforText(_ search: String, scope: String = "A") {
-        let predicate = NSPredicate(format: "%K CONTAINS[cd] %@", scope, search)
-        fetchController?.fetchRequest.predicate = predicate
-        fetchControllerFetch()
-        collectionView.reloadData()
-    }
-    
-     func fetchControllerFetch() {
-        do {
-            try self.fetchController?.performFetch()
-        }catch {
-            print("An error ocurred \(error.localizedDescription)")
-        }
-        collectionView.reloadData()
-    }
-    
-    func setupView() {
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            let t = self.traitCollection.layoutDirection
-            
-            
-            
-            collectionView.collectionViewLayout = columnLayout
-        }
-        collectionView.contentInsetAdjustmentBehavior = .always
-        searchController.searchResultsUpdater = self
-        searchController.searchBar.delegate = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Filter"
-        searchController.searchBar.scopeButtonTitles = ["Title", "Region"]
-        navigationItem.searchController = searchController
-        definesPresentationContext = true
-        
-        self.collectionView.dataSource = self
-        self.collectionView.delegate = self
-    }
-}
 
     // -- > if you are reading data from a background thread—it may be computationally expensive to animate all the changes.
     // Rather than responding to changes individually , you could just implement controllerDidChangeContent(_:)
@@ -196,4 +197,35 @@ extension TrafficCamsViewController: UISearchResultsUpdating, UISearchBarDelegat
         fetchControllerFetch()
     }
     
+}
+
+
+// MARK: - Private instance methods
+private extension TrafficCamsViewController {
+    
+    func fetchControllerFetch() {
+        do {
+            try self.fetchController?.performFetch()
+        }catch {
+            print("An error ocurred \(error.localizedDescription)")
+        }
+        collectionView.reloadData()
+    }
+    
+    func setupView() {
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            collectionView.collectionViewLayout = columnLayout
+        }
+        collectionView.contentInsetAdjustmentBehavior = .always
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Filter"
+        searchController.searchBar.scopeButtonTitles = ["Title", "Region"]
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+    }
 }
